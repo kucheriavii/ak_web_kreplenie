@@ -1,0 +1,965 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile version</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <style>
+            body{margin:0;padding:0;font-family:OpenSansRegular,sans-serif}.wrapper{min-width:320px}.wrapper button{outline:0}.header{margin-top:16px;margin-bottom:16px;height:24px}a:hover,a:visited{text-decoration:none;color:#212121}.main-menu{display:none;width:245px;background:#fff;position:fixed;top:0;left:0;overflow-y:auto;z-index:999;padding:52px 0 0;box-shadow:1px 0 11px 0 #ccc;bottom:0}.main-menu li .icon,i.close{background-repeat:no-repeat}.main-menu li{display:block;margin:4px 0 0;padding:0;height:38px;border-bottom:solid 1px #efeff4;line-height:38px}.main-menu li a{display:block}.main-menu li .text{display:block;font-size:12px;font-family:OpenSansSemiBold,sans-serif;color:#212121}.main-menu li .icon{margin:0 12px;width:32px;display:block;float:left;height:32px;background-image:url(../img/menusprite.png);background-position:center}.close-menu,.fix,i.close{display:none}.main-menu li:nth-child(1) .icon{background-position:center 8px}.main-menu li:nth-child(2) .icon{background-position:center -29px}.main-menu li:nth-child(3) .icon{background-position:center -67px}.main-menu li:nth-child(4) .icon{background-position:center -104px}.main-menu li:nth-child(5) .icon{background-position:center -142px}.main-menu li:nth-child(6) .icon{background-position:center -180px}.main-menu li:nth-child(7) .icon{background-position:center -218px}.logo-fix{height:56px;margin-top:-16px;line-height:52px;padding:16px;position:fixed;z-index:9999;background:#fff;opacity:1}.close-menu{height:52px;margin:-16px 0 0;padding:0;position:fixed;width:245px}i.close{width:54px;height:56px;position:absolute;top:0;left:191px;background-color:#efeff4;background-image:url(../img/close.png);background-position:center;opacity:1}.logo a,.menu .burger,.profile a{display:block;height:24px;background-position:50%;background-repeat:no-repeat}.image-fix{width:170px!important}.profile-fix{float:right}.menu .burger{background-image:url(../img/burger.png)}.logo a{background-image:url(../img/logo_clear.png);background-size:contain;width:164px}.logo img{display:block;max-height:24px}.logo .centred{width:auto;margin:0 auto;display:block}.profile a{background-image:url(../img/profile.png)}.auth-section,.basked-section,.catalog-section,.contacts,.delivery-section,.filter-section{padding-left:15px;padding-right:15px;display:none;position:absolute;width:100%;top:0;right:50%;min-height:400px;background-color:transparent;z-index:9999;transform:translateX(50%);max-width:600px;overflow:auto}.auth-section .wrap,.basked-section .wrap,.catalog-section .wrap,.contacts .wrap,.delivery-section .wrap,.filter-section .wrap{width:288px;padding:0 15px;margin:0 auto;background-color:#fff;box-shadow:0 0 20px 0 #ccc}.auth-section .contacts-text p:last-child,.auth-section .phones,.basked-section .contacts-text p:last-child,.basked-section .phones,.catalog-section .contacts-text p:last-child,.catalog-section .phones,.contacts .contacts-text p:last-child,.contacts .phones,.delivery-section .contacts-text p:last-child,.delivery-section .phones,.filter-section .contacts-text p:last-child,.filter-section .phones{padding-bottom:10px}.auth-section .contact__header,.basked-section .contact__header,.catalog-section .contact__header,.contacts .contact__header,.delivery-section .contact__header,.filter-section .contact__header{height:56px;position:relative}.auth-section .auth-section-close,.auth-section .basked-section-close,.auth-section .catalog-section-close,.auth-section .contacts-close,.auth-section .delivery-close,.auth-section .filter-section-close,.basked-section .auth-section-close,.basked-section .basked-section-close,.basked-section .catalog-section-close,.basked-section .contacts-close,.basked-section .delivery-close,.basked-section .filter-section-close,.catalog-section .auth-section-close,.catalog-section .basked-section-close,.catalog-section .catalog-section-close,.catalog-section .contacts-close,.catalog-section .delivery-close,.catalog-section .filter-section-close,.contacts .auth-section-close,.contacts .basked-section-close,.contacts .catalog-section-close,.contacts .contacts-close,.contacts .delivery-close,.contacts .filter-section-close,.delivery-section .auth-section-close,.delivery-section .basked-section-close,.delivery-section .catalog-section-close,.delivery-section .contacts-close,.delivery-section .delivery-close,.delivery-section .filter-section-close,.filter-section .auth-section-close,.filter-section .basked-section-close,.filter-section .catalog-section-close,.filter-section .contacts-close,.filter-section .delivery-close,.filter-section .filter-section-close{width:54px;height:56px;position:absolute;top:0;right:1px;background-color:#efeff4;background-image:url(../img/close.png);background-repeat:no-repeat;background-position:center;opacity:1;margin:0 -16px}.auth-section h3,.basked-section h3,.catalog-section h3,.contacts h3,.delivery-section h3,.filter-section h3{font-family:OpenSansBold,sans-serif;display:block;height:56px;line-height:56px;font-size:16px;margin-top:0}.auth-section .address,.auth-section .address-delivery,.auth-section .delivery-from-stock,.auth-section .phones,.auth-section .plan-call,.auth-section .plane,.auth-section .ukrainian-delivery,.basked-section .address,.basked-section .address-delivery,.basked-section .delivery-from-stock,.basked-section .phones,.basked-section .plan-call,.basked-section .plane,.basked-section .ukrainian-delivery,.catalog-section .address,.catalog-section .address-delivery,.catalog-section .delivery-from-stock,.catalog-section .phones,.catalog-section .plan-call,.catalog-section .plane,.catalog-section .ukrainian-delivery,.contacts .address,.contacts .address-delivery,.contacts .delivery-from-stock,.contacts .phones,.contacts .plan-call,.contacts .plane,.contacts .ukrainian-delivery,.delivery-section .address,.delivery-section .address-delivery,.delivery-section .delivery-from-stock,.delivery-section .phones,.delivery-section .plan-call,.delivery-section .plane,.delivery-section .ukrainian-delivery,.filter-section .address,.filter-section .address-delivery,.filter-section .delivery-from-stock,.filter-section .phones,.filter-section .plan-call,.filter-section .plane,.filter-section .ukrainian-delivery{margin-bottom:25px}.auth-section .show-map,.basked-section .show-map,.catalog-section .show-map,.contacts .show-map,.delivery-section .show-map,.filter-section .show-map{height:32px;font:12px/32px OpenSansRegular,sans-serif}.auth-section .phones a,.basked-section .phones a,.catalog-section .phones a,.contacts .phones a,.delivery-section .phones a,.filter-section .phones a{font:12px OpenSansRegular,sans-serif;text-decoration:underline;color:#5856d6}.auth-section .contacts-icon,.basked-section .contacts-icon,.catalog-section .contacts-icon,.contacts .contacts-icon,.delivery-section .contacts-icon,.filter-section .contacts-icon{display:block;float:left;position:relative;top:-3px;padding-right:10px}.auth-section .contacts-header,.basked-section .contacts-header,.catalog-section .contacts-header,.contacts .contacts-header,.delivery-section .contacts-header,.filter-section .contacts-header{display:block;font:14px OpenSansSemibold,sans-serif;margin-bottom:12px}.auth-section .contacts-text,.basked-section .contacts-text,.catalog-section .contacts-text,.contacts .contacts-text,.delivery-section .contacts-text,.filter-section .contacts-text{display:block;font:12px OpenSansRegular,sans-serif;text-shadow:#333 0 0 0;color:#212121;line-height:22px;margin-bottom:16px}.auth-section .phones ul,.basked-section .phones ul,.catalog-section .phones ul,.contacts .phones ul,.delivery-section .phones ul,.filter-section .phones ul{display:block;margin:0;padding:0}.auth-section .phones ul li,.basked-section .phones ul li,.catalog-section .phones ul li,.contacts .phones ul li,.delivery-section .phones ul li,.filter-section .phones ul li{list-style-type:none;margin:0;padding:0;line-height:28px}.auth-section .phones ul li .mail_contacts,.basked-section .phones ul li .mail_contacts,.catalog-section .phones ul li .mail_contacts,.contacts .phones ul li .mail_contacts,.delivery-section .phones ul li .mail_contacts,.filter-section .phones ul li .mail_contacts{color:#212121;height:100%;display:block;text-decoration:none}.auth-section .phones ul li .mail_contacts:before,.basked-section .phones ul li .mail_contacts:before,.catalog-section .phones ul li .mail_contacts:before,.contacts .phones ul li .mail_contacts:before,.delivery-section .phones ul li .mail_contacts:before,.filter-section .phones ul li .mail_contacts:before{content:"";display:block;float:left;width:20px;min-height:100%;background-image:url(../img/mail.png);height:14px;background-position:0 50%;background-repeat:no-repeat}.auth-section .phones ul li a,.auth-section .phones ul li span,.basked-section .phones ul li a,.basked-section .phones ul li span,.catalog-section .phones ul li a,.catalog-section .phones ul li span,.contacts .phones ul li a,.contacts .phones ul li span,.delivery-section .phones ul li a,.delivery-section .phones ul li span,.filter-section .phones ul li a,.filter-section .phones ul li span{text-shadow:none}.delivery-section{display:none}.catalog-wrap,.item-wrap,.search_row{height:40px;background-color:#f44336}.catalog-wrap .search-item-container,.item-wrap .search-item-container,.search_row .search-item-container{background-color:#fff}.catalog-wrap a,.item-wrap a,.search_row a{display:block}.catalog-wrap .search-header,.item-wrap .search-header,.search_row .search-header{display:inline-block;font:14px OpenSansBold,sans-serif;color:#fff;line-height:40px;position:relative}.catalog-wrap .search-header .show_catalog,.item-wrap .search-header .show_catalog,.search_row .search-header .show_catalog{display:block;margin:0;padding:0;background-color:transparent;border:none}.catalog-wrap .search-header .dropdown-button,.item-wrap .search-header .dropdown-button,.search_row .search-header .dropdown-button{display:block;color:#445;position:absolute;z-index:999;left:100%;padding-left:5px;top:0}.catalog-wrap .search-header .dropdown-catalog,.item-wrap .search-header .dropdown-catalog,.search_row .search-header .dropdown-catalog{display:none;padding:0;margin:0;position:absolute;z-index:999}.catalog-wrap .search-header .dropdown-item,.item-wrap .search-header .dropdown-item,.search_row .search-header .dropdown-item{display:block;padding:0;margin:0}.catalog-wrap .search-input,.item-wrap .search-input,.search_row .search-input{background-image:url(../img/search.png);background-position:8px center;background-repeat:no-repeat;text-indent:30px;font-family:OpenSansRegular,sans-serif;height:32px;margin-top:4px;width:100%;border-radius:3px;border:none;color:#333;outline:0;padding-right:10px}.catalog-wrap .search-input:after,.item-wrap .search-input:after,.search_row .search-input:after{content:"test";display:block;width:20px;background-color:red;height:40px}.catalog-wrap .search-input::placeholder,.item-wrap .search-input::placeholder,.search_row .search-input::placeholder{color:#c7c7cc;opacity:1}.catalog-wrap .header-icon,.item-wrap .header-icon,.search_row .header-icon{display:block}.catalog-wrap .bucket-icon,.catalog-wrap .heard-icon,.catalog-wrap .search-icon,.item-wrap .bucket-icon,.item-wrap .heard-icon,.item-wrap .search-icon,.search_row .bucket-icon,.search_row .heard-icon,.search_row .search-icon{display:block;background-image:url(../img/heard.png);width:18px;height:40px;line-height:40px;background-repeat:no-repeat;background-position:center;position:relative;margin:0 auto}.catalog-wrap .active,.item-wrap .active,.search_row .active{background:#d32f2f}.catalog-wrap .shops,.item-wrap .shops,.search_row .shops{padding-left:0}.catalog-wrap .how-many,.item-wrap .how-many,.search_row .how-many{position:absolute;color:#fff;right:-9px;border-radius:50%;background:#64dd17;height:17px;min-width:17px;line-height:17px;text-align:center;top:0;left:12px;overflow:hidden;max-width:35px;display:inline-block;width:auto;font-size:12px}.catalog-wrap .bucket-icon,.item-wrap .bucket-icon,.search_row .bucket-icon{background-image:url(../img/bucket.png);width:27px;padding:0;margin:0 auto}.catalog-wrap .search-icon,.item-wrap .search-icon,.search_row .search-icon{background-image:url(../img/search-white.png);width:27px}.dropdown-search{background-color:#d32f2f;display:none}.active{display:block}.catalog-section .wrap{padding-bottom:30px}.catalog-section .catalog-list,.catalog-section .filter-list,.filter-section .catalog-list,.filter-section .filter-list{display:block;margin:0;padding:0}.catalog-section .catalog-list .catalog-item,.catalog-section .catalog-list .catalog-subcategory-item,.catalog-section .catalog-list .filter-item,.catalog-section .catalog-list .filter-subcategory-item,.catalog-section .filter-list .catalog-item,.catalog-section .filter-list .catalog-subcategory-item,.catalog-section .filter-list .filter-item,.catalog-section .filter-list .filter-subcategory-item,.filter-section .catalog-list .catalog-item,.filter-section .catalog-list .catalog-subcategory-item,.filter-section .catalog-list .filter-item,.filter-section .catalog-list .filter-subcategory-item,.filter-section .filter-list .catalog-item,.filter-section .filter-list .catalog-subcategory-item,.filter-section .filter-list .filter-item,.filter-section .filter-list .filter-subcategory-item{display:block;border-bottom:1px solid #efeff4;background-color:#fff;margin:0 -14px;padding:0 14px;position:relative}.catalog-section .catalog-list .catalog-subcategory,.catalog-section .catalog-list .catalog-subcategory-item,.catalog-section .catalog-list .filter-subcategory,.catalog-section .catalog-list .filter-subcategory-item,.catalog-section .filter-list .catalog-subcategory,.catalog-section .filter-list .catalog-subcategory-item,.catalog-section .filter-list .filter-subcategory,.catalog-section .filter-list .filter-subcategory-item,.filter-section .catalog-list .catalog-subcategory,.filter-section .catalog-list .catalog-subcategory-item,.filter-section .catalog-list .filter-subcategory,.filter-section .catalog-list .filter-subcategory-item,.filter-section .filter-list .catalog-subcategory,.filter-section .filter-list .catalog-subcategory-item,.filter-section .filter-list .filter-subcategory,.filter-section .filter-list .filter-subcategory-item{padding:0;margin:0}.catalog-section .catalog-list .catalog-item:after,.catalog-section .catalog-list .catalog-item:before,.catalog-section .catalog-list .catalog-subcategory-item:after,.catalog-section .catalog-list .catalog-subcategory-item:before,.catalog-section .catalog-list .filter-item:after,.catalog-section .catalog-list .filter-item:before,.catalog-section .catalog-list .filter-subcategory-item:after,.catalog-section .catalog-list .filter-subcategory-item:before,.catalog-section .filter-list .catalog-item:after,.catalog-section .filter-list .catalog-item:before,.catalog-section .filter-list .catalog-subcategory-item:after,.catalog-section .filter-list .catalog-subcategory-item:before,.catalog-section .filter-list .filter-item:after,.catalog-section .filter-list .filter-item:before,.catalog-section .filter-list .filter-subcategory-item:after,.catalog-section .filter-list .filter-subcategory-item:before,.filter-section .catalog-list .catalog-item:after,.filter-section .catalog-list .catalog-item:before,.filter-section .catalog-list .catalog-subcategory-item:after,.filter-section .catalog-list .catalog-subcategory-item:before,.filter-section .catalog-list .filter-item:after,.filter-section .catalog-list .filter-item:before,.filter-section .catalog-list .filter-subcategory-item:after,.filter-section .catalog-list .filter-subcategory-item:before,.filter-section .filter-list .catalog-item:after,.filter-section .filter-list .catalog-item:before,.filter-section .filter-list .catalog-subcategory-item:after,.filter-section .filter-list .catalog-subcategory-item:before,.filter-section .filter-list .filter-item:after,.filter-section .filter-list .filter-item:before,.filter-section .p��     p��                     ���             ���     ���             ���      @      ���             content:"";display:inline-block;width:16px;height:16px;background-image:url(../img/list-before-icon.png);position:absolute;line-height:46px;top:15px}.catalog-section .catalog-list .catalog-item:after,.catalog-section .catalog-list .catalog-subcategory-item:after,.catalog-section .catalog-list .filter-item:after,.catalog-section .catalog-list .filter-subcategory-item:after,.catalog-section .filter-list .catalog-item:after,.catalog-section .filter-list .catalog-subcategory-item:after,.catalog-section .filter-list .filter-item:after,.catalog-section .filter-list .filter-subcategory-item:after,.filter-section .catalog-list .catalog-item:after,.filter-section .catalog-list .catalog-subcategory-item:after,.filter-section .catalog-list .filter-item:after,.filter-section .catalog-list .filter-subcategory-item:after,.filter-section .filter-list .catalog-item:after,.filter-section .filter-list .catalog-subcategory-item:after,.filter-section .filter-list .filter-item:after,.filter-section .filter-list .filter-subcategory-item:after{background-image:url(../img/red-arrow.png);background-position:50% 50%;background-repeat:no-repeat;width:12px;height:12px;top:18px;right:14px}.catalog-section .catalog-list .catalog-item:first-child,.catalog-section .catalog-list .catalog-subcategory-item:first-child,.catalog-section .catalog-list .filter-item:first-child,.catalog-section .catalog-list .filter-subcategory-item:first-child,.catalog-section .filter-list .catalog-item:first-child,.catalog-section .filter-list .catalog-subcategory-item:first-child,.catalog-section .filter-list .filter-item:first-child,.catalog-section .filter-list .filter-subcategory-item:first-child,.filter-section .catalog-list .catalog-item:first-child,.filter-section .catalog-list .catalog-subcategory-item:first-child,.filter-section .catalog-list .filter-item:first-child,.filter-section .catalog-list .filter-subcategory-item:first-child,.filter-section .filter-list .catalog-item:first-child,.filter-section .filter-list .catalog-subcategory-item:first-child,.filter-section .filter-list .filter-item:first-child,.filter-section .filter-list .filter-subcategory-item:first-child{border-top:1px solid #efeff4}.catalog-section .catalog-list .catalog-item .catalog-link,.catalog-section .catalog-list .catalog-item .catalog-subcategory-link,.catalog-section .catalog-list .catalog-item .filter-link,.catalog-section .catalog-list .catalog-item .filter-subcategory-link,.catalog-section .catalog-list .catalog-subcategory-item .catalog-link,.catalog-section .catalog-list .catalog-subcategory-item .catalog-subcategory-link,.catalog-section .catalog-list .catalog-subcategory-item .filter-link,.catalog-section .catalog-list .catalog-subcategory-item .filter-subcategory-link,.catalog-section .catalog-list .filter-item .catalog-link,.catalog-section .catalog-list .filter-item .catalog-subcategory-link,.catalog-section .catalog-list .filter-item .filter-link,.catalog-section .catalog-list .filter-item .filter-subcategory-link,.catalog-section .catalog-list .filter-subcategory-item .catalog-link,.catalog-section .catalog-list .filter-subcategory-item .catalog-subcategory-link,.catalog-section .catalog-list .filter-subcategory-item .filter-link,.catalog-section .catalog-list .filter-subcategory-item .filter-subcategory-link,.catalog-section .filter-list .catalog-item .catalog-link,.catalog-section .filter-list .catalog-item .catalog-subcategory-link,.catalog-section .filter-list .catalog-item .filter-link,.catalog-section .filter-list .catalog-item .filter-subcategory-link,.catalog-section .filter-list .catalog-subcategory-item .catalog-link,.catalog-section .filter-list .catalog-subcategory-item .catalog-subcategory-link,.catalog-section .filter-list .catalog-subcategory-item .filter-link,.catalog-section .filter-list .catalog-subcategory-item .filter-subcategory-link,.catalog-section .filter-list .filter-item .catalog-link,.catalog-section .filter-list .filter-item .catalog-subcategory-link,.catalog-section .filter-list .filter-item .filter-link,.catalog-section .filter-list .filter-item .filter-subcategory-link,.catalog-section .filter-list .filter-subcategory-item .catalog-link,.catalog-section .filter-list .filter-subcategory-item .catalog-subcategory-link,.catalog-section .filter-list .filter-subcategory-item .filter-link,.catalog-section .filter-list .filter-subcategory-item .filter-subcategory-link,.filter-section .catalog-list .catalog-item .catalog-link,.filter-section .catalog-list .catalog-item .catalog-subcategory-link,.filter-section .catalog-list .catalog-item .filter-link,.filter-section .catalog-list .catalog-item .filter-subcategory-link,.filter-section .catalog-list .catalog-subcategory-item .catalog-link,.filter-section .catalog-list .catalog-subcategory-item .catalog-subcategory-link,.filter-section .catalog-list .catalog-subcategory-item .filter-link,.filter-section .catalog-list .catalog-subcategory-item .filter-subcategory-link,.filter-section .catalog-list .filter-item .catalog-link,.filter-section .catalog-list .filter-item .catalog-subcategory-link,.filter-section .catalog-list .filter-item .filter-link,.filter-section .catalog-list .filter-item .filter-subcategory-link,.filter-section .catalog-list .filter-subcategory-item .catalog-link,.filter-section .catalog-list .filter-subcategory-item .catalog-subcategory-link,.filter-section .catalog-list .filter-subcategory-item .filter-link,.filter-section .catalog-list .filter-subcategory-item .filter-subcategory-link,.filter-section .filter-list .catalog-item .catalog-link,.filter-section .filter-list .catalog-item .catalog-subcategory-link,.filter-section .filter-list .catalog-item .filter-link,.filter-section .filter-list .catalog-item .filter-subcategory-link,.filter-section .filter-list .catalog-subcategory-item .catalog-link,.filter-section .filter-list .catalog-subcategory-item .catalog-subcategory-link,.filter-section .filter-list .catalog-subcategory-item .filter-link,.filter-section .filter-list .catalog-subcategory-item .filter-subcategory-link,.filter-section .filter-list .filter-item .catalog-link,.filter-section .filter-list .filter-item .catalog-subcategory-link,.filter-section .filter-list .filter-item .filter-link,.filter-section .filter-list .filter-item .filter-subcategory-link,.filter-section .filter-list .filter-subcategory-item .catalog-link,.filter-section .filter-list .filter-subcategory-item .catalog-subcategory-link,.filter-section .filter-list .filter-subcategory-item .filter-link,.filter-section .filter-list .filter-subcategory-item .filter-subcategory-link{font:14px OpenSansSemiBold,sans-serif;color:#212121;text-indent:30px;min-height:46px;display:flex;align-items:center}.catalog-section .catalog-list .catalog-item .catalog-link:hover,.catalog-section .catalog-list .catalog-item .catalog-link:visited,.catalog-section .catalog-list .catalog-item .catalog-subcategory-link:hover,.catalog-section .catalog-list .catalog-item .catalog-subcategory-link:visited,.catalog-section .catalog-list .catalog-item .filter-link:hover,.catalog-section .catalog-list .catalog-item .filter-link:visited,.catalog-section .catalog-list .catalog-item .filter-subcategory-link:hover,.catalog-section .catalog-list .catalog-item .filter-subcategory-link:visited,.catalog-section .catalog-list .catalog-subcategory-item .catalog-link:hover,.catalog-section .catalog-list .catalog-subcategory-item .catalog-link:visited,.catalog-section .catalog-list .catalog-subcategory-item .catalog-subcategory-link:hover,.catalog-section .catalog-list .catalog-subcategory-item .catalog-subcategory-link:visited,.catalog-section .catalog-list .catalog-subcategory-item .filter-link:hover,.catalog-section .catalog-list .catalog-subcategory-item .filter-link:visited,.catalog-section .catalog-list .catalog-subcategory-item .filter-subcategory-link:hover,.catalog-section .catalog-list .catalog-subcategory-item .filter-subcategory-link:visited,.catalog-section .catalog-list .filter-item .catalog-link:hover,.catalog-section .catalog-list .filter-item .catalog-link:visited,.catalog-section .catalog-list .filter-item .catalog-subcategory-link:hover,.catalog-section .catalog-list .filter-item .catalog-subcategory-link:visited,.catalog-section .catalog-list .filter-item .filter-link:hover,.catalog-section .catalog-list .filter-item .filter-link:visited,.catalog-section .catalog-list .filter-item .filter-subcategory-link:hover,.catalog-section .catalog-list .filter-item .filter-subcategory-link:visited,.catalog-section .catalog-list .filter-subcategory-item .catalog-link:hover,.catalog-section .catalog-list .filter-subcategory-item .catalog-link:visited,.catalog-section .catalog-list .filter-subcategory-item .catalog-subcategory-link:hover,.catalog-section .catalog-list .filter-subcategory-item .catalog-subcategory-link:visited,.catalog-section .catalog-list .filter-subcategory-item .filter-link:hover,.catalog-section .catalog-list .filter-subcategory-item .filter-link:visited,.catalog-section .catalog-list .filter-subcategory-item .filter-subcategory-link:hover,.catalog-section .catalog-list .filter-subcategory-item .filter-subcategory-link:visited,.catalog-section .filter-list .catalog-item .catalog-link:hover,.catalog-section .filter-list .catalog-item .catalog-link:visited,.catalog-section .filter-list .catalog-item .catalog-subcategory-link:hover,.catalog-section .filter-list .catalog-item .catalog-subcategory-link:visited,.catalog-section .filter-list .catalog-item .filter-link:hover,.catalog-section .filter-list .catalog-item .filter-link:visited,.catalog-section .filter-list .catalog-item .filter-subcategory-link:hover,.catalog-section .filter-list .catalog-item .filter-subcategory-link:visited,.catalog-section .filter-list .catalog-subcategory-item .catalog-link:hover,.catalog-section .filter-list .catalog-subcategory-item .catalog-link:visited,.catalog-section .filter-list .catalog-subcategory-item .catalog-subcategory-link:hover,.catalog-section .filter-list .catalog-subcategory-item .catalog-subcategory-link:visited,.catalog-section .filter-list .catalog-subcategory-item .filter-link:hover,.catalog-section .filter-list .catalog-subcategory-item .filter-link:visited,.catalog-section .filter-list .catalog-subcategory-item .filter-subcategory-link:hover,.catalog-section .filter-list .catalog-subcategory-item .filter-subcategory-link:visited,.catalog-section .filter-list .filter-item .catalog-link:hover,.catalog-section .filter-list .filter-item .catalog-link:visited,.catalog-section .filter-list .filter-item .catalog-subcategory-link:hover,.catalog-section .filter-list .filter-item .catalog-subcategory-link:visited,.catalog-section .filter-list .filter-item .filter-link:hover,.catalog-section .filter-list .filter-item .filter-link:visited,.catalog-section .filter-list .filter-item .filter-subcategory-link:hover,.catalog-section .filter-list .filter-item .filter-subcategory-link:visited,.catalog-section .filter-list .filter-subcategory-item .catalog-link:hover,.catalog-section .filter-list .filter-subcategory-item .catalog-link:visited,.catalog-section .filter-list .filter-subcategory-item .catalog-subcategory-link:hover,.catalog-section .filter-list .filter-subcategory-item .catalog-subcategory-link:visited,.catalog-section .filter-list .filter-subcategory-item .filter-link:hover,.catalog-section .filter-list .filter-subcategory-item .filter-link:visited,.catalog-section .filter-list .filter-subcategory-item .filter-subcategory-link:hover,.catalog-section .filter-list .filter-subcategory-item .filter-subcategory-link:visited,.filter-section .catalog-list .catalog-item .catalog-link:hover,.filter-section .catalog-list .catalog-item .catalog-link:visited,.filter-section .catalog-list .catalog-item .catalog-subcategory-link:hover,.filter-section .catalog-list .catalog-item .catalog-subcategory-link:visited,.filter-section .catalog-list .catalog-item .filter-link:hover,.filter-section .catalog-list .catalog-item .filter-link:visited,.filter-section .catalog-list .catalog-item .filter-subcategory-link:hover,.filter-section .catalog-list .catalog-item .filter-subcategory-link:visited,.filter-section .catalog-list .catalog-subcategory-item .catalog-link:hover,.filter-section .catalog-list .catalog-subcategory-item .catalog-link:visited,.filter-section .catalog-list .catalog-subcategory-item .catalog-subcategory-link:hover,.filter-section .catalog-list .catalog-subcategory-item .catalog-subcategory-link:visited,.filter-section .catalog-list .catalog-subcategory-item .filter-link:hover,.filter-section .catalog-list .catalog-subcategory-item .filter-link:visited,.filter-section .catalog-list .catalog-subcategory-item .filter-subcategory-link:hover,.filter-section .catalog-list .catalog-subcategory-item .filter-subcategory-link:visited,.filter-section .catalog-list .filter-item .catalog-link:hover,.filter-section .catalog-list .filter-item .catalog-link:visited,.filter-section .catalog-list .filter-item .catalog-subcategory-link:hover,.filter-section .catalog-list .filter-item .catalog-subcategory-link:visited,.filter-section .catalog-list .filter-item .filter-link:hover,.filter-section .catalog-list .filter-item .filter-link:visited,.filter-section .catalog-list .filter-item .filter-subcategory-link:hover,.filter-section .catalog-list .filter-item .filter-subcategory-link:visited,.filter-section .catalog-list .filter-subcategory-item .catalog-link:hover,.filter-section .catalog-list .filter-subcategory-item .catalog-link:visited,.filter-section .catalog-list .filter-subcategory-item .catalog-subcategory-link:hover,.filter-section .catalog-list .filter-subcategory-item .catalog-subcategory-link:visited,.filter-section .catalog-list .filter-subcategory-item .filter-link:hover,.filter-section .catalog-list .filter-subcategory-item .filter-link:visited,.filter-section .catalog-list .filter-subcategory-item .filter-subcategory-link:hover,.filter-section .catalog-list .filter-subcategory-item .filter-subcategory-link:visited,.filter-section .filter-list .catalog-item .catalog-link:hover,.filter-section .filter-list .catalog-item .catalog-link:visited,.filter-section .filter-list .catalog-item .catalog-subcategory-link:hover,.filter-section .filter-list .catalog-item .catalog-subcategory-link:visited,.filter-section .filter-list .catalog-item .filter-link:hover,.filter-section .filter-list .catalog-item .filter-link:visited,.filter-section .filter-list .catalog-item .filter-subcategory-link:hover,.filter-section .filter-list .catalog-item .filter-subcategory-link:visited,.filter-section .filter-list .catalog-subcategory-item .catalog-link:hover,.filter-section .filter-list .catalog-subcategory-item .catalog-link:visited,.filter-section .filter-list .catalog-subcategory-item .catalog-subcategory-link:hover,.filter-section .filter-list .catalog-subcategory-item .catalog-subcategory-link:visited,.filter-section .filter-list .catalog-subcategory-item .filter-link:hover,.filter-section .filter-list .catalog-subcategory-item .filter-link:visited,.filter-section .filter-list .catalog-subcategory-item .filter-subcategory-link:hover,.filter-section .filter-list .catalog-subcategory-item .filter-subcategory-link:visited,.filter-section .filter-list .filter-item .catalog-link:hover,.filter-section .filter-list .filter-item .catalog-link:visited,.filter-section .filter-list .filter-item .catalog-subcategory-link:hover,.filter-section .filter-list .filter-item .catalog-subcategory-link:visited,.filter-section .filter-list .filter-item .filter-link:hover,.filter-section .filter-list .filter-item .filter-link:visited,.filter-section .filter-list .filter-item .filter-subcategory-link:hover,.filter-section .filter-list .filter-item .filter-subcategory-link:visited,.filter-section .filter-list .filter-subcategory-item .catalog-link:hover,.filter-section .filter-list .filter-subcategory-item .catalog-link:visited,.filter-section .filter-list .filter-subcategory-item .catalog-subcategory-link:hover,.filter-section .filter-list .filter-subcategory-item .catalog-subcategory-link:visited,.filter-section .filter-list .filter-subcategory-item .filter-link:hover,.filter-section .filter-list .filter-subcategory-item .filter-link:visited,.filter-section .filter-list .filter-subcategory-item .filter-subcategory-link:hover,.filter-section .filter-list .filter-subcategory-item .filter-subcategory-link:visited{text-decoration:none}.catalog-section .catalog-list .opened:after,.catalog-section .filter-list .opened:after,.filter-section .catalog-list .opened:after,.filter-section .filter-list .opened:after{background-image:url(../img/red-arrow-down.png);width:12px;height:12px;right:20px}.catalog-section .catalog-list .catalog-subcategory-item:after,.catalog-section .catalog-list .catalog-subcategory-item:before,.catalog-section .catalog-list .filter-subcategory-item:after,.catalog-section .catalog-list .filter-subcategory-item:before,.catalog-section .catalog-subcategory,.catalog-section .filter-list .catalog-subcategory-item:after,.catalog-section .filter-list .catalog-subcategory-item:before,.catalog-section .filter-list .filter-subcategory-item:after,.catalog-section .filter-list .filter-subcategory-item:before,.catalog-section .filter-subcategory,.filter-section .catalog-list .catalog-subcategory-item:after,.filter-section .catalog-list .catalog-subcategory-item:before,.filter-section .catalog-list .filter-subcategory-item:after,.filter-section .catalog-list .filter-subcategory-item:before,.filter-section .catalog-subcategory,.filter-section .filter-list .catalog-subcategory-item:after,.filter-section .filter-list .catalog-subcategory-item:before,.filter-section .filter-list .filter-subcategory-item:after,.filter-section .filter-list .filter-subcategory-item:before,.filter-section .filter-subcategory{display:none}.auth-section .wrap{max-width:600px}.auth-section .social-auth span.auth-info{font:14px OpenSansSemiBold,sans-serif;display:block;color:#212121;text-align:center;margin-top:15px}.auth-section .social-auth .auth-buttons{display:flex;justify-content:center;height:48px;margin:20px 0}.auth-section .social-auth .auth-link{display:flex;font:14px OpenSansSemibold,sans-serif;width:50%;border:1px solid #bdbdbd;max-width:160px;text-align:center;padding:10px 0;justify-content:center;align-items:center}.auth-section .social-auth .auth-link img{padding-right:10px}.auth-section .social-auth .img-box{display:inline-block}.auth-section .social-auth .text{display:inline-block;height:48px;line-height:48px}.auth-section .social-auth .google{border-radius:3px 0 0 3px}.auth-section .social-auth .fb{border-left:none;border-radius:0 3px 3px 0}.auth-section .social-auth .info{display:block;color:#bdbdbd;text-align:center;margin:24px 0}.auth-form label{display:block;width:100%;max-width:600px;margin:0 auto}.auth-form label .auth-password{margin-bottom:0}.auth-form input{width:100%;height:38px;border:1px solid #bdbdbd;border-radius:3px;margin-bottom:24px;padding:0 10px;color:#212121;outline:0}.auth-form input:focus{border:1px solid #1e88e5}.auth-form input::placeholder{color:#dbdbdb}.auth-form .password-block{display:flex;justify-content:space-between;margin-bottom:30px;margin-top:8px}.auth-form .password-block input[type=checkbox]{display:none}.auth-form .password-block input[type=checkbox]:checked+span span{background-image:url(../img/red-check.png)}.auth-form .password-block .chk-pass-lb{width:auto;margin:0}.auth-form .password-block .show-pass{font:12px OpenSansRegular,sans-serif;display:flex}.auth-form .password-block .rem-pass{color:#5856d6;font-size:12px;text-decoration:underline}.auth-form .password-block .pass-show{font-size:12px;display:flex}.auth-form .password-block .show-pass-cheker{width:18px;height:18px;border-radius:3px;border:1px solid #f44336;display:inline-block}.auth-form .backed-buttons{margin-bottom:16px}.auth-form .registration{border:1px solid #bdbdbd;background-color:#fff;margin:16px 0}.breadcrumbs{margin-top:10px;font:12px OpenSansRegular,sans-serif;margin-bottom:-3px}.breadcrumbs-list{display:flex;margin:0;padding:0;align-items:center;height:16px}.breadcrumbs-item{list-style-type:none;padding:0;margin:0 0 0 8px;position:relative}.breadcrumbs-item:first-child{margin-left:0}.breadcrumbs-item:first-child a{color:#212121}.breadcrumbs-link,.breadcrumbs-link:active,.breadcrumbs-link:hover{text-decoration:none;color:#bdbdbd}.breadcrumbs-item:after{content:"";position:absolute;top:0;height:100%;display:block;background-image:url(../img/breadcrumb-arrow.png);background-repeat:no-repeat;background-position:center;width:4px;left:-6px}.breadcrumbs-item:first-child:after{display:none}.breadcrumbs-link{display:block}.breadcrumbs .active{color:#212121}.control-user .order-user{display:flex;justify-content:center;border-bottom:1px solid #bdbdbd;margin:0 -14px;padding:20px 16px}.control-user .order-user button{width:50%;display:inline-block;background-color:transparent;border:none;padding:0;margin:0}.control-user .order-user button span{color:#bdbdbd;border-bottom:1px dashed #bdbdbd}.control-user .order-user .active span{color:#212121;border:none}.regular-user-form{display:none}.new-user-form,.regular-user-form{margin:0;padding:20px 0 0;color:#212121}.new-user-form p,.regular-user-form p{font:14px OpenSansSemiBold,sans-serif;padding:14px 0}.new-user-form .info,.regular-user-form .info{font:12px OpenSansRegular,sans-serif;color:#bdbdbd;margin-bottom:14px;display:block}.new-user-form input,.regular-user-form input{width:100%;height:38px;border:1px solid #bdbdbd;color:#212121;border-radius:3px;padding:0 16px;margin-bottom:24px;outline:0}.new-user-form input::placeholder,.regular-user-form input::placeholder{color:#bdbdbd}.new-user-form input:last-child,.regular-user-form input:last-child{margin-bottom:0}.new-user-form input:focus,.regular-user-form input:focus{border:1px solid #5856d6}.new-user-form .wrong,.regular-user-form .wrong{font:14px OpenSansRegular,sans-serif;border:1px solid #f44336}.new-user-form .wrong::placeholder,.regular-user-form .wrong::placeholder{font-size:12px;color:#f44336}.new-user-form .search,.regular-user-form .search{background-image:url(../img/search.png);background-position:97% center;background-repeat:no-repeat;padding-right:41px;color:#212121}.new-user-form .detail-variant-order,.regular-user-form .detail-variant-order{font:14px OpenSansSemiBold,sans-serif;background-image:url(../img/blue-arrow.png);display:block;background-repeat:no-repeat;background-position:96.5% 13px;min-height:38px;line-height:38px;border:1px solid #bdbdbd;padding:0 16px;margin-bottom:16px}.comments-order .info span,.comments-order .info textarea,.do-no-call-me .lbl-txt{font:14px OpenSansRegular,sans-serif}.new-user-form .detail-variant-order span,.regular-user-form .detail-variant-order span{display:block;width:100%}.new-user-form .variants-delivery,.regular-user-form .variants-delivery{margin:16px 0 0;padding:0;display:none}.new-user-form .variants-delivery li,.regular-user-form .variants-delivery li{display:block;margin:0;padding:0;color:#bdbdbd}.new-user-form .variants-delivery li input[type=radio],.regular-user-form .variants-delivery li input[type=radio]{display:none}.new-user-form .variants-delivery li input:checked+span,.regular-user-form .variants-delivery li input:checked+span{color:#212121}.new-user-form .delivery-order,.new-user-form .payment-order,.regular-user-form .delivery-order,.regular-user-form .payment-order{border-bottom:1px solid #bdbdbd;padding-bottom:20px}.new-user-form .payment-position,.regular-user-form .payment-position{display:flex;align-items:center}.new-user-form .payment-position:before,.regular-user-form .payment-position:before{content:"";display:block;width:25px;height:25px;border-radius:50%;border:1px solid #bdbdbd;margin-right:12px}.new-user-form .payments-list,.new-user-form .payments-list .payment-method,.regular-user-form .payments-list,.regular-user-form .payments-list .payment-method{display:block;margin:0;padding:0}.new-user-form .payments-list .payment-method .info,.regular-user-form .payments-list .payment-method .info{padding-left:35px}.new-user-form .payments-list .payment-method input,.regular-user-form .payments-list .payment-method input{display:none}.new-user-form .payments-list .payment-method input:checked+span.payment-position:before,.regular-user-form .payments-list .payment-method input:checked+span.payment-position:before{border:5px solid #1e88e5}.comments-order{text-align:center}.comments-order .info{width:100%;text-align:center;margin:14px auto;display:inline-block}.comments-order .info span{border-bottom:1px dashed #bdbdbd;color:#bdbdbd;margin-bottom:18px;display:inline-block}.comments-order .info textarea{outline:0;margin:0 auto;width:100%;display:none;border:1px solid #bdbdbd;border-radius:3px}.do-no-call-me .infolabel img,.do-no-call-me input+span{margin-right:16px;display:inline-block}.comments-order .info textarea:focus{border:1px solid #1e88e5}.do-no-call-me{border-bottom:1px solid #bdbdbd;padding-bottom:30px;display:flex}.do-no-call-me input{display:none}.do-no-call-me input+span{min-height:24px;background-image:url(../img/check-empty.png);background-repeat:no-repeat;background-position:left center;padding-left:40px}.do-no-call-me input:checked+span{background-image:url(../img/check.png)}.do-no-call-me .infolabel{padding-left:40px;margin-top:10px;width:100%;position:relative;margin-bottom:16px}.do-no-call-me .infolabel span{display:inline-block;position:absolute;height:44px;font:9px OpenSansRegular,sans-serif;background-color:#eee;width:167px;padding:8px;top:0;border-radius:3px}.do-no-call-me .infolabel span:before{content:'';position:absolute;left:-19px;top:0;border:10px solid transparent;border-right:10px solid #eee}.order-list .panel{display:flex;justify-content:space-between;align-items:center;box-shadow:0 0 0;padding:14px 0}.order-list .panel p{display:inline-block;position:relative;margin:0;padding:0}.order-list .panel button{display:inline-block;border:none;background-color:transparent;color:#bdbdbd;font:14px OpenSansSemibold,sans-serif;text-transform:lowercase}.order-list .items-list{display:block;margin:0;padding:0}.order-list .items-list .order-item{display:flex;margin:0 -14px 20px;padding:0 0 18px}.order-list .items-list .order-item:last-child{margin-bottom:0}.order-list .order-item{border-bottom:1px solid #bdbdbd}.order-list .order-item .photo{min-height:60px;margin:0;padding:0}.order-list .order-item .photo img{width:100%}.order-list .order-item .text{color:#212121;font:12px OpenSansBold,sans-serif}.order-list .order-item .text .code{font:10px OpenSansLight,sans-serif;color:#212121;display:block;margin-bottom:14px}.order-list .prices{display:flex;justify-content:flex-start;flex-wrap:wrap;align-items:center}.order-list .prices .product-old-price{font:14px OpenSansSemiBold,sans-serif}.order-list .prices .multiplayer,.order-list .prices .product-actual-price{font:18px OpenSansSemiBold,sans-serif;margin-right:0}.order-list .prices .product-actual-price{margin:0 6px;padding:0}.order-list .prices .order-multiplayer,.order-list .prices .order-sum{display:inline-block;font-size:18px}.order-list .prices .order-sum{margin-left:5px}.order-list .prices .order-sum .nominal{vertical-align:text-top;font-size:.7em}.order-list .prices .nominal{font-size:10px;padding:5px 0}.order-list .edit-info{text-align:center;margin:14px 0 20px}.order-list .edit-info .info{font:12px OpenSansRegular,sans-serif;color:#bdbdbd;display:inline-block;margin:0 auto;border-bottom:1px dashed}.about-order{display:block;margin:0 0 30px;padding:0;font:12px OpenSansSemiBold,sans-serif}.about-order .parameter-of-order{display:block;padding:0;margin:12px 0;color:#bdbdbd}.about-order .price{font-size:18px;margin-left:2px}.about-order .currency{vertical-align:text-top;font-size:.6em;padding-top:2px;display:inline-block}.new-user-form button.order,.regular-user-form button.order{margin:30px 0}
+        </style>
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <span class="close-menu"></span>
+                        <ul class="main-menu">
+                            <li>
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="text">Главная</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="text">Вход | Регистрация</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="text">Контакты</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="text">Доставка и оплата</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="text">Гарантия на товар</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="text">Услуги</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="text">Статьи</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="menu header-icon col-xs-2">
+                            <a href="#" class="burger"></a>
+                        </span>
+                        <span class="logo col-xs-8">
+                            <a href="/" class="display-pic centred"></a>
+                            <i class="close"></i>
+                        </span>
+                        <span class="fix col-xs-2">
+                        </span>
+                        <span class="profile col-xs-2">
+                            <a href="#"></a>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <!--catalog section-->
+            <section class="catalog-section">
+                <div class="wrap">
+                    <div class="contact__header">
+                        <h3>Каталог товаров</h3>
+                        <i class="catalog-section-close"></i>
+                    </div>
+                    <ul class="catalog-list">
+                        <li class="catalog-item">
+                            <a href="#" class="catalog-link">Крепления для телевизора</a>
+                            <ul class="catalog-subcategory">
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">17-29 дюймов и мониторов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">30-40 дюймов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="#" class="catalog-link">Т2 цифровое телевидение</a>
+                            <ul class="catalog-subcategory">
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">17-29 дюймов и мониторов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">30-40 дюймов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="#" class="catalog-link">Полки под телевизор</a>
+                            <ul class="catalog-subcategory">
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">17-29 дюймов и мониторов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">30-40 дюймов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="#" class="catalog-link">Крепления для проекторов</a>
+                            <ul class="catalog-subcategory">
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">17-29 дюймов и мониторов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">30-40 дюймов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="#" class="catalog-link">Экраны для проекторов</a>
+                            <ul class="catalog-subcategory">
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">17-29 дюймов и мониторов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">30-40 дюймов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="#" class="catalog-link">Крепления для колонок</a>
+                            <ul class="catalog-subcategory">
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">17-29 дюймов и мониторов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">30-40 дюймов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="#" class="catalog-link">Тумбы под телевизор</a>
+                            <ul class="catalog-subcategory">
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">17-29 дюймов и мониторов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">30-40 дюймов</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
+                                </li>
+                                <li class="catalog-subcategory-item">
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <!--Basked section-->
+            <section class="basked-section">
+                <div class="wrap">
+                    <div class="contact__header">
+                        <h3>Корзина</h3>
+                        <i class="basked-section-close"></i>
+                    </div>
+                    <div class="basked-info">
+                        <span>Товар добавлен в корзину:</span>
+                    </div>
+                    <ul class="basked-list clearfix">
+                        <li class="basked-item">
+                            <span class="basked-item-link">Logan Galaxy 4
+                                <button class="removePositionBskd">Удалить</button>
+                            </span>
+                            <div class="form-wrap">
+                                <form action="#">
+                                    <button style="display:none"></button>
+                                    <button class="removeItemBskd"></button>
+                                    <input type="text" class="basked-items-amount" value="1" title="">
+                                    <button class="addItemBskd"></button>
+                                </form>
+                            </div>
+                            <div class="product-price">
+                                <span class="product-actual-price">
+                                    <span class="product-nominal-price">288</span>
+                                    <span class="product-price-currency">грн</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="basked-item">
+                            <span class="basked-item-link">Logan Galaxy 4
+                                <button class="removePositionBskd">Удалить</button>
+                            </span>
+                            <div class="form-wrap">
+                                <form action="#">
+                                    <button style="display:none"></button>
+                                    <button class="removeItemBskd"></button>
+                                    <input type="text" class="basked-items-amount" value="1" title="">
+                                    <button class="addItemBskd"></button>
+                                </form>
+                            </div>
+                            <div class="product-price">
+                                <span class="product-actual-price">
+                                    <span class="product-nominal-price">288</span>
+                                    <span class="product-price-currency">грн</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="backed-total">
+                        <span class="items-amount-total">
+                            В корзине товаров: 12 шт.
+                        </span>
+                        <div class="items-price-total">
+                            <span>на сумму:</span>
+                            <span class="product-actual-price">
+                                <span class="product-nominal-price">288</span>
+                                <span class="product-price-currency">грн</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="backed-buttons">
+                        <button class="button-full total-btn-accept">Оформить заказ</button>
+                        <button class="button-full total-btn-continue">Продолжить покупки</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--auth section-->
+            <section class="auth-section">
+                <div class="wrap">
+                    <div class="contact__header">
+                        <h3>Логин</h3>
+                        <i class="auth-section-close"></i>
+                    </div>
+
+                    <div class="social-auth">
+                        <span class="auth-info">Вход через соцсети</span>
+                        <div class="auth-buttons">
+                            <a href="#" class="auth-link google">
+                                <div class="img-box">
+                                    <img src="img/google-auth.png" alt="google">
+                                </div>
+                                <span class="text">Google</span>
+                            </a>
+                            <a href="#" class="auth-link fb">
+                                <div class="img-box">
+                                    <img src="img/facebook-auth.png" alt="facebook">
+                                </div>
+                                <span class="text">Facebook</span>
+                            </a>
+                        </div>
+                        <span class="info">или</span>
+                        <div class="auth-form">
+                            <form action="#">
+                                <label class="auth-email-lbl">
+                                    <input type="text" name="name" class="auth-email" placeholder="Email" required>
+                                </label>
+                                <label class="auth-pass-lbl">
+                                    <input type="password" name="name" class="auth-password" placeholder="Пароль" required>
+                                </label>
+
+                                <div class="password-block">
+                                    <label class="chk-pass-lb">
+                                        <input type="checkbox" name="show-pass" class="show-pass">
+
+                                        <span class="pass-show"><span class="show-pass-cheker"></span>Показать пароль</span>
+                                    </label>
+                                    <a href="#" class="rem-pass">Напомнить пароль</a>
+                                </div>
+
+                                <div class="backed-buttons clearfix">
+                                    <button class="button-full total-btn-accept enter">Войти</button>
+                                    <a href="#" class="button-full total-btn-continue registration">Регистрация</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <div class="catalog-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="search search-header-box col-xs-6 header-icon">
+                            <div class="search-header">
+                                 <button class="show_catalog">Каталог товаров</button> <i class="dropdown-button"><img src="img/arrow-down.png" alt="arrow down"></i>
+                                <ul class="dropdown-catalog">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item" href="#">item</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item" href="#">item</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item" href="#">item</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item" href="#">item</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item" href="#">item</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item" href="#">item</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <a href="#" class="search-box header-icon col-xs-2">
+                            <span class="search-icon"></span>
+                        </a>
+                        <a href="#" class="likes header-icon col-xs-2">
+                            <span class="heard-icon">
+                                <span class="how-many">3</span>
+                            </span>
+                        </a>
+                        <a href="#" class="shops header-icon col-xs-2">
+                            <div class="bucket-icon">
+                                <span class="how-many">10</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container search_row dropdown-search">
+                <div class="row">
+                    <div class="search col-xs-12">
+                        <form action="#">
+                            <span class="searchtool"></span>
+                            <input type="text" name="name" class="search-input" placeholder="Поиск товара">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+
+                            <ul class="breadcrumbs-list">
+                                <li class="breadcrumbs-item">
+                                    <a href="#" class="breadcrumbs-link">Главная</a>
+                                </li>
+                                <li class="breadcrumbs-item">
+                                    <a href="#" class="breadcrumbs-link">Оформить заказ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content-box order-content-box">
+
+                <div class="catalog-header-section-name">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class="catalog-header-section-text">Оформление заказа:</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-user">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="order-user">
+                                    <button class="new-user active"><span>Новый <br>покупатель</span></button>
+                                    <button class="regular-user"><span>Постоянный <br>покупатель</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-user-form user-form">
+                    <form action="#">
+                        <div class="basic-order">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <input name="name" type="text" placeholder="Имя и Фамилия*" required>
+                                        <input name="name" type="text" placeholder="Телефон *" required>
+                                        <input name="name" type="email" placeholder="Обязательное поле!" class="wrong" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery-order">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p>Доставка</p>
+                                        <div class="detail-variant-order">
+                                            <span class="show-variants">Выберите способ доставки</span>
+
+                                            <ul class="variants-delivery">
+                                                <li><label><input type="radio" name="vr-dlvr" value="1" checked="checked"><span>Самовывоз со склада Днепр</span></label></li>
+                                                <li><label><input type="radio" name="vr-dlvr" value="2"><span>Новая Почта</span></label></li>
+                                                <li><label><input type="radio" name="vr-dlvr" value="3"><span>Укрпочта</span></label></li>
+                                            </ul>
+                                        </div>
+                                        <span class="info">
+                                            Стоимость доставки от 50 грн в зависимости <br>от веса и объёма товара
+                                        </span>
+                                        <input type="text" name="name" class="search" placeholder="Выбирите город">
+                                        <input type="text" name="name" class="search" placeholder="Выберите склад">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-order">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p>Оплата</p>
+                                        <ul class="payments-list">
+                                            <li class="payment-method">
+                                                <label  class="payment-item">
+                                                    <input type="radio" name="payment-position">
+                                                    <span class="payment-position">
+                                                        Наложенный платёж
+                                                    </span>
+                                                    <span class="info">
+                                                        Дополнительно оплачивается 20 грн + 2% от стоимости заказа
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="payment-method">
+                                                <label  class="payment-item">
+                                                    <input type="radio" name="payment-position">
+                                                    <span class="payment-position">
+                                                        Предоплата на карту
+                                                    </span>
+                                                    <span class="info">
+                                                       Номер карты предоставим вам после согласования заказа
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="payment-method">
+                                                <label  class="payment-item">
+                                                    <input type="radio" name="payment-position">
+                                                    <span class="payment-position">
+                                                        Наличными
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-order">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label class="info">
+                                            <span>Комментарий к заказу</span>
+                                            <textarea name="comment-order" id="nu-order-ta" cols="30" rows="5" class="ar-cmmt"></textarea>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="do-no-call-me">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="label-box">
+                                            <label class="dtcl-lbl">
+                                                <input type="checkbox" name="name" >
+                                                <span>Не перезванивайте, отправляйте
+                                                я всё правильно указал</span>
+                                            </label>
+                                            <div class="infolabel clearfix">
+                                                <img src="img/info.png" alt="info">
+                                                <span class="clearfix">Посылка будет отправлена без уточнения деталей от менеджера</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-list">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="panel">
+                                            <p>Состав заказа</p>
+                                            <button class="show active">Скрыть</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <ul class="items-list">
+                                            <li class="order-item">
+                                                <div class="photo col-xs-3">
+                                                    <img src="img/items/item1.png" alt="item">
+                                                </div>
+                                                <div class="text col-xs-9">
+                                                    <span class="name">Крепление для ТВ настенное Brateck LCD 502AB</span>
+                                                    <span class="code">Код: <span class="code-num">45881</span></span>
+
+                                                    <div class="prices">
+                                                         <span class="product-old-price">
+                                                            <span class="product-nominal-price">288</span>
+                                                            <span class="product-price-currency">грн</span>
+                                                        </span>
+                                                        <span class="product-actual-price">
+                                                            <span class="product-nominal-price">288</span>
+                                                            <span class="product-price-currency">грн</span>
+                                                        </span>
+                                                        <span class="order-multiplayer">
+                                                            <span class="product-nominal-price">×
+                                                                <span class="num">2</span>
+                                                                <span class="nominal">шт</span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="order-sum">
+                                                            <span class="product-nominal-price">=
+                                                                <span class="num">576</span>
+                                                                <span class="nominal">грн</span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </li>
+                                            <li class="order-item">
+                                                <div class="photo col-xs-3">
+                                                    <img src="img/items/item1.png" alt="item">
+                                                </div>
+                                                <div class="text col-xs-9">
+                                                    <span class="name">Крепление для ТВ настенное Brateck LCD 502AB</span>
+                                                    <span class="code">Код: <span class="code-num">45881</span></span>
+
+                                                    <div class="prices">
+                                                         <span class="product-old-price">
+                                                            <span class="product-nominal-price">288</span>
+                                                            <span class="product-price-currency">грн</span>
+                                                        </span>
+                                                        <span class="product-actual-price">
+                                                            <span class="product-nominal-price">288</span>
+                                                            <span class="product-price-currency">грн</span>
+                                                        </span>
+                                                        <span class="order-multiplayer">
+                                                            <span class="product-nominal-price">×
+                                                                <span class="num">2</span>
+                                                                <span class="nominal">шт</span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="order-sum">
+                                                            <span class="product-nominal-price">=
+                                                                <span class="num">576</span>
+                                                                <span class="nominal">грн</span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                        <div class="edit-info">
+                                            <span class="info">
+                                                Редактировать заказ
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basked-result">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul class="about-order">
+                                            <li class="parameter-of-order">
+                                                <span class="parameter-text">Товаров на сумму:</span>
+                                                <span class="parameter-nominal">
+                                                    <span class="price">500 <span class="currency">грн</span></span>
+                                                </span>
+                                            </li>
+                                            <li class="parameter-of-order">
+                                                <span class="parameter-text">Доставка:</span>
+                                                <span class="parameter-nominal">по тарифу перевозчика</span>
+                                            </li>
+                                            <li class="parameter-of-order">
+                                                <span class="parameter-text">Наложенный платёж:</span>
+                                                <span class="parameter-nominal">
+                                                    <span class="price">500 <span class="currency">грн</span></span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <span class="text">Всего к оплате: </span>
+                                        <span class="product-actual-price">
+                                            <span class="product-nominal-price">288</span>
+                                            <span class="product-price-currency">грн</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <button class="button-full order">
+                                            Заказ подтверждаю
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="regular-user-form user-form">
+                    <form action="#">
+                        <div class="basic-order">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        test regular user
+                                        <input type="text" name="name" placeholder="Имя и Фамилия*">
+                                        <input type="text" name="name" placeholder="Телефон *">
+                                        <input type="email" name="name" placeholder="Обязательное поле!" class="wrong">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery-order">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p>Доставка</p>
+                                        <div class="detail-variant-order">
+                                            <span class="show-variants">Выберите способ доставки</span>
+
+                                        <ul class="variants-delivery">
+                                            <li><label><input type="radio" name="vr-dlvr" value="1" checked="checked"><span>Самовывоз со склада Днепр</span></label></li>
+                                            <li><label><input type="radio" name="vr-dlvr" value="2"><span>Новая Почта</span></label></li>
+                                            <li><label><input type="radio" name="vr-dlvr" value="3"><span>Укрпочта</span></label></li>
+                                        </ul>
+                                        </div>
+                                        <span class="info">
+                                            Стоимость доставки от 50 грн в зависимости <br>от веса и объёма товара
+                                        </span>
+                                        <input type="text" name="name" class="search" placeholder="Выбирите город">
+                                        <input type="text" name="name" class="search" placeholder="Выберите склад">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-order">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p>Оплата</p>
+                                        <ul class="payments-list">
+                                            <li class="payment-method">
+                                                <label  class="payment-item">
+                                                    <input type="radio" name="payment-position">
+                                                    <span class="payment-position">
+                                                        Наложенный платёж
+                                                    </span>
+                                                    <span class="info">
+                                                        Дополнительно оплачивается 20 грн + 2% от стоимости заказа
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="payment-method">
+                                                <label  class="payment-item">
+                                                    <input type="radio" name="payment-position">
+                                                    <span class="payment-position">
+                                                        Предоплата на карту
+                                                    </span>
+                                                    <span class="info">
+                                                       Номер карты предоставим вам после согласования заказа
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="payment-method">
+                                                <label  class="payment-item">
+                                                    <input type="radio" name="payment-position">
+                                                    <span class="payment-position">
+                                                        Наличными
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-order">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label class="info">
+                                            <span>Комментарий к заказу</span>
+                                            <textarea name="comment-order" id="reg-order-ta" cols="30" rows="5" class="ar-cmmt"></textarea>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="do-no-call-me">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="label-box">
+                                            <label class="dtcl-lbl">
+                                                <input type="checkbox" name="name">
+                                                <span>Не перезванивайте, отправляйте
+                                                я всё правильно указал</span>
+                                            </label>
+                                            <div class="infolabel clearfix">
+                                                <img src="img/info.png" alt="info">
+                                                <span class="clearfix">Посылка будет отправлена без уточнения деталей от менеджера</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-list">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="panel">
+                                            <p>Состав заказа</p>
+                                            <button class="show active">Скрыть</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <ul class="items-list">
+                                            <li class="order-item">
+                                                <div class="photo col-xs-3">
+                                                    <img src="img/items/item1.png" alt="item">
+                                                </div>
+                                                <div class="text col-xs-9">
+                                                    <span class="name">Крепление для ТВ настенное Brateck LCD 502AB</span>
+                                                    <span class="code">Код: <span class="code-num">45881</span></span>
+
+                                                    <div class="prices">
+                                                         <span class="product-old-price">
+                                                            <span class="product-nominal-price">288</span>
+                                                            <span class="product-price-currency">грн</span>
+                                                        </span>
+                                                        <span class="product-actual-price">
+                                                            <span class="product-nominal-price">288</span>
+                                                            <span class="product-price-currency">грн</span>
+                                                        </span>
+                                                        <span class="order-multiplayer">
+                                                            <span class="product-nominal-price">×
+                                                                <span class="num">2</span>
+                                                                <span class="nominal">шт</span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="order-sum">
+                                                            <span class="product-nominal-price">=
+                                                                <span class="num">576</span>
+                                                                <span class="nominal">шт</span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </li>
+                                            <li class="order-item">
+                                                <div class="photo col-xs-3">
+                                                    <img src="img/items/item1.png" alt="item">
+                                                </div>
+                                                <div class="text col-xs-9">
+                                                    <span class="name">Крепление для ТВ настенное Brateck LCD 502AB</span>
+                                                    <span class="code">Код: <span class="code-num">45881</span></span>
+
+                                                    <div class="prices">
+                                                         <span class="product-old-price">
+                                                            <span class="product-nominal-price">288</span>
+                                                            <span class="product-price-currency">грн</span>
+                                                        </span>
+                                                        <span class="product-actual-price">
+                                                            <span class="product-nominal-price">288</span>
+                                                            <span class="product-price-currency">грн</span>
+                                                        </span>
+                                                        <span class="order-multiplayer">
+                                                            <span class="product-nominal-price">×
+                                                                <span class="num">2</span>
+                                                                <span class="nominal">шт</span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="order-sum">
+                                                            <span class="product-nominal-price">=
+                                                                <span class="num">576</span>
+                                                                <span class="nominal">шт</span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                        <div class="edit-info">
+                                            <span class="info">
+                                                Редактировать заказ
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basked-result">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul class="about-order">
+                                            <li class="parameter-of-order">
+                                                <span class="parameter-text">Товаров на сумму:</span>
+                                                <span class="parameter-nominal">
+                                                    <span class="price">500 <span class="currency">грн</span></span>
+                                                </span>
+                                            </li>
+                                            <li class="parameter-of-order">
+                                                <span class="parameter-text">Доставка:</span>
+                                                <span class="parameter-nominal">по тарифу перевозчика</span>
+                                            </li>
+                                            <li class="parameter-of-order">
+                                                <span class="parameter-text">Наложенный платёж:</span>
+                                                <span class="parameter-nominal">
+                                                    <span class="price">500 <span class="currency">грн</span></span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <span class="text">Всего к оплате: </span>
+                                        <span class="product-actual-price">
+                                            <span class="product-nominal-price">288</span>
+                                            <span class="product-price-currency">грн</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <button class="button-full order">
+                                            Заказ подтверждаю
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <footer style="display: none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="#" class="button-full">
+                                <i class="full-site-icon">
+                                    <img src="img/fullversion.png" alt="full-version-icon">
+                                </i>
+                                Полная версия сайта
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script>
+                $("head").append("<link rel='stylesheet' type='text/css' href='css/normalize.min.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='css/fonts.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/bootstrap-3.3.7-dist/css/bootstrap.min.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/slick-1.8.0/slick/slick.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/slick-1.8.0/slick/slick-theme.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/magnigic-popup/magnific-popup.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/UI/jquery-ui.min.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='css/main.css' />");
+        </script>
+        <script src="libs/slick-1.8.0/slick/slick.min.js"></script>
+        <script src="libs/magnigic-popup/jquery.magnific-popup.min.js"></script>
+        <script src="libs/UI/jquery-ui.min.js"></script>
+        <script src="libs/UI/jquery.ui.touch-punch.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+</html>
