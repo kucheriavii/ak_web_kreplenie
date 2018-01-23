@@ -2214,7 +2214,7 @@ i.close {
       display: block;
       width: 100%;
       min-width: 90px;
-      min-height: 90px; }
+      /*min-height: 90px;*/ }
   .item .item-detail {
     padding-left: 0; }
   .item a {
