@@ -206,7 +206,8 @@ i.close {
     margin-bottom: 25px; }
   .contacts .show-map, .delivery-section .show-map, .catalog-section .show-map, .basked-section .show-map, .filter-section .show-map, .auth-section .show-map {
     height: 32px;
-    font: 12px/32px "OpenSansRegular", sans-serif; }
+    font: 12px/32px "OpenSansRegular", sans-serif;
+    color: #fff; }
   .contacts .phones, .delivery-section .phones, .catalog-section .phones, .basked-section .phones, .filter-section .phones, .auth-section .phones {
     padding-bottom: 10px; }
     .contacts .phones a, .delivery-section .phones a, .catalog-section .phones a, .basked-section .phones a, .filter-section .phones a, .auth-section .phones a {

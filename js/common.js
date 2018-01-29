@@ -2,17 +2,18 @@
 $( function() {
     var minimumRange = 0;
     var maximumRange = 1000;
+    var amountleft = $("#amount-left")
     $( "#slider-range" ).slider({
         range: true,
         min: 0,
         max: 1000,
         values: [ minimumRange, maximumRange ],
         slide: function( event, ui ) {
-            $( "#amount-left" ).val(ui.values[ 0 ]);
+            amountleft.val(ui.values[ 0 ]);
             $( "#amount-right" ).val(ui.values[ 1 ]);
         }
     });
-    $( "#amount-left" ).val( $( "#slider-range" ).slider( "values", 0 ));
+    amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
     $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
     $('body').append('<a href="#" id="go-top" title="Вверх"></a>');
 } );
@@ -51,11 +52,11 @@ $("#amount-left").keyup(function(){
             max: 1000,
             values: [ minimumRange, maximumRange ],
             slide: function( event, ui ) {
-                $( "#amount-left" ).val(ui.values[ 0 ]);
+                amountleft.val(ui.values[ 0 ]);
                 $( "#amount-right" ).val(ui.values[ 1 ]);
             }
         });
-        $( "#amount-left" ).val( $( "#slider-range" ).slider( "values", 0 ));
+        amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
         $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
     } else {
         $( "#slider-range" ).slider({
@@ -64,11 +65,11 @@ $("#amount-left").keyup(function(){
             max: 1000,
             values: [ 0, maximumRange ],
             slide: function( event, ui ) {
-                $( "#amount-left" ).val(ui.values[ 0 ]);
+                amountleft.val(ui.values[ 0 ]);
                 $( "#amount-right" ).val(ui.values[ 1 ]);
             }
         });
-        $( "#amount-left" ).val( $( "#slider-range" ).slider( "values", 0 ));
+        amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
         $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
     }
     });
@@ -83,11 +84,11 @@ $("#amount-right").keyup(function(){
             max: 1000,
             values: [ minimumRange, maximumRange ],
             slide: function( event, ui ) {
-                $( "#amount-left" ).val(ui.values[ 0 ]);
+                amountleft.val(ui.values[ 0 ]);
                 $( "#amount-right" ).val(ui.values[ 1 ]);
             }
         });
-        $( "#amount-left" ).val( $( "#slider-range" ).slider( "values", 0 ));
+        amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
         $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
     } else {
         $( "#slider-range" ).slider({
@@ -96,11 +97,11 @@ $("#amount-right").keyup(function(){
             max: 1000,
             values: [ minimumRange, 1000 ],
             slide: function( event, ui ) {
-                $( "#amount-left" ).val(ui.values[ 0 ]);
+                amountleft.val(ui.values[ 0 ]);
                 $( "#amount-right" ).val(ui.values[ 1 ]);
             }
         });
-        $( "#amount-left" ).val( $( "#slider-range" ).slider( "values", 0 ));
+        amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
         $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
     }
 });
