@@ -1144,7 +1144,7 @@ i.close {
   width: 133px;
   display: inline-block;
   font-size: 15px;
-  line-height: 38px;
+  line-height: 32px;
   margin-left: 20px; }
 
 .promocode-box .prompcode-form input {
@@ -2286,10 +2286,11 @@ i.close {
     height: 24px;
     margin-left: 20px; }
 
+.empty {
+  height: 88px; }
+
 footer {
-  margin-top: -50px;
-  margin-bottom: 22px;
-  padding-top: 72px;
+  margin-top: -72px;
   font-family: "OpenSansBold", sans-serif; }
   footer a.button-full:visited {
     color: #fff;
