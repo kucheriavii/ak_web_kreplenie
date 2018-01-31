@@ -19,6 +19,10 @@ body{
   button{
     outline: none;
   }
+  a:visited, a:hover, a:focus{
+    text-decoration: none;
+    color: #212121;
+  }
 }
 .header{
   margin-top: 16px;
@@ -416,7 +420,7 @@ i.close {
     line-height: 17px;
     text-align: center;
     top: 0;
-    left: 12px;
+    left: 52%;
     overflow: hidden;
     max-width: 35px;
     display: inline-block;
@@ -425,7 +429,7 @@ i.close {
   }
   .bucket-icon{
     background-image: url(../img/bucket.png);
-    width: 27px;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
   }
@@ -965,9 +969,16 @@ i.close {
       display: block;
       margin: 0;
       padding: 0;
+      a{
+        outline: none;
+      }
       img{
         display: block;
         width: 100%;
+        outline: none;
+        &:focus{
+          outline: none;
+        }
       }
     }
   }
@@ -989,6 +1000,9 @@ i.close {
     text-align: center;
     .item:nth-child(2n-1) {
       border-right: solid 1px #efeff4;
+    }
+    .item:last-child{
+      border-bottom: solid 1px #efeff4;
     }
     .item{
       height: 165px;
@@ -1077,6 +1091,7 @@ i.close {
   &-slider-item{
     display: block;
     text-align: center;
+    outline: none;
   }
   &-item-link{
     display: inline-block;
@@ -1097,6 +1112,9 @@ i.close {
     background-repeat: no-repeat;
     font: 10px "OpenSansSemiBold", sans-serif;
     padding-top: 29px;
+    &:focus{
+      outline: none;
+    }
   }
   &-item-img{
     display: block;
@@ -1963,6 +1981,9 @@ i.close {
             display: block;
             min-height: 70px;
             min-width: 70px;
+            &:focus{
+              outline: none;
+            }
            /* background-color: #eee; /*Просто для перевірки того чи правильно вирівняні маргіни в блоці*/
             .feedback-img{
               display: block;
@@ -2568,6 +2589,7 @@ i.close {
     position: relative;
     height: 50px;
     text-align: center;
+    border: 1px solid #eee;
     .inner{
       position: absolute;
       top: 50%;
@@ -2884,7 +2906,12 @@ footer{
   width: 100%;
   margin: 0;
 }
-
+.content-box .item-container .item{
+  border-right: solid 1px #efeff4;
+}
+.content-box .item-container .item:last-child{
+  border-right: none;
+}
 }
 @media only screen and (max-height: 500px) {
   .popup{
