@@ -206,6 +206,9 @@ $('.catalog-section-close').click(function(){
 });
 //bucked
 $('.bucket-icon').click(function(){
+    $(".auth-section").css('display', 'none');
+    $(".filter-section").css('display', 'none');
+
     $(".basked-section").css('display', 'block');
     $('.burger').css('display', 'none');
     $('.catalog-pic').css('display', 'none');
@@ -236,6 +239,9 @@ $('.control-user button').click(function(){
 });
 //login
 $('.profile a').click(function(){
+    $(".basked-section").css('display', 'none');
+    $('.header-icon').removeClass('active');
+    $(".filter-section").css('display', 'none');
     $(".auth-section").css('display', 'block');
     $('.burger').css('display', 'none');
     $('.catalog-pic').css('display', 'none');

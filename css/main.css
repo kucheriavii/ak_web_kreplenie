@@ -832,12 +832,35 @@ i.close {
     color: #f44336; }
 
 /*=================ITEMS=================*/
+.content-box .no-found, .content-box .no-found:visited {
+  color: #fff;
+  font: 15px "OpenSansBold", sans-serif;
+  line-height: 50px; }
+
 .content-box h2 {
   font: 18px "OpenSansSemibold", sans-serif;
   text-align: center;
   height: 40px;
   background-color: #eeeeee;
   line-height: 40px; }
+
+.content-box h3 {
+  margin-top: 0px; }
+
+.content-box ul {
+  padding: 10px 0px;
+  display: block; }
+  .content-box ul li {
+    padding: 0;
+    margin: 0;
+    display: block; }
+    .content-box ul li:before {
+      content: "\25CF";
+      width: 16px;
+      display: inline-block;
+      text-align: center;
+      color: #00618b;
+      padding-right: 8px; }
 
 .content-box .item-container {
   text-align: center; }
@@ -2155,8 +2178,7 @@ i.close {
   .delivery .outer {
     position: relative;
     height: 50px;
-    text-align: center;
-    border: 1px solid #eee; }
+    text-align: center; }
     .delivery .outer .inner {
       position: absolute;
       top: 50%;
@@ -2165,10 +2187,12 @@ i.close {
       width: 100%; }
   .delivery .del-phone {
     display: block;
-    padding-right: 30px; }
+    padding-right: 30px;
+    border: 1px solid #eee; }
   .delivery .del-money {
     display: block;
-    padding-left: 30px; }
+    padding-left: 30px;
+    border: 1px solid #eee; }
   .delivery a {
     color: #212121; }
   .delivery .inner span {
@@ -2304,6 +2328,9 @@ i.close {
 
 .empty {
   height: 88px; }
+
+.wrong {
+  color: #f44336; }
 
 footer {
   margin-top: -72px;

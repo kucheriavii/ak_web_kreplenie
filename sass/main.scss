@@ -989,12 +989,37 @@ i.close {
 }
 /*=================ITEMS=================*/
 .content-box{
+  .no-found,.no-found:visited{
+    color: #fff;
+    font: 15px "OpenSansBold", sans-serif;
+    line-height: 50px;
+  }
   h2 {
     font: 18px "OpenSansSemibold", sans-serif;
     text-align: center;
     height: 40px;
     background-color: #eeeeee;
     line-height: 40px;
+  }
+  h3{
+    margin-top: 0px;
+  }
+  ul{
+    padding: 10px 0px;
+    display: block;
+    li{
+      padding: 0;
+      margin: 0;
+      display: block;
+      &:before{
+        content:"\25CF";
+        width: 16px;
+        display: inline-block;
+        text-align: center;
+        color: #00618b;
+        padding-right: 8px;
+      }
+    }
   }
   .item-container{
     text-align: center;
@@ -2589,7 +2614,6 @@ i.close {
     position: relative;
     height: 50px;
     text-align: center;
-    border: 1px solid #eee;
     .inner{
       position: absolute;
       top: 50%;
@@ -2601,10 +2625,12 @@ i.close {
   .del-phone{
     display: block;
     padding-right: 30px;
+    border: 1px solid #eee;
   }
   .del-money{
     display: block;
     padding-left: 30px;
+    border: 1px solid #eee;
   }
   a{
     color: #212121;
@@ -2771,6 +2797,9 @@ i.close {
 }
 .empty{
   height: 88px;
+}
+.wrong{
+  color: #f44336;
 }
 footer{
   margin-top: -72px;
