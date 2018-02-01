@@ -997,19 +997,19 @@ i.close {
   h2 {
     font: 18px "OpenSansSemibold", sans-serif;
     text-align: center;
-    height: 40px;
+    min-height: 40px;
     background-color: #eeeeee;
     line-height: 40px;
   }
   h3{
-    margin-top: 0px;
+    margin-top: 8px;
   }
   ul{
-    padding: 10px 0px;
+    padding: 0 0 10px 0px;
     display: block;
     li{
       padding: 0;
-      margin: 0;
+      margin: 10px 0;
       display: block;
       &:before{
         content:"\25CF";
@@ -1822,6 +1822,7 @@ i.close {
       margin: 0;
       padding: 0;
       border-top: 1px solid #eeeeee;
+      cursor: pointer;
       &:last-child{
         border-bottom: 1px solid #eeeeee;
       }
@@ -2800,6 +2801,15 @@ i.close {
 }
 .wrong{
   color: #f44336;
+}
+.orange{
+  color: #f16522;
+}
+.red{
+  color: #ee1d24;
+}
+.green{
+  color: #00ff00;
 }
 footer{
   margin-top: -72px;
