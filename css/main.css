@@ -25,7 +25,8 @@ body {
 .header {
   margin-top: 16px;
   margin-bottom: 16px;
-  height: 24px; }
+  height: 24px;
+  position: relative; }
 
 a:visited, a:hover {
   text-decoration: none;
@@ -36,15 +37,15 @@ a:visited, a:hover {
   display: none;
   width: 245px;
   background: #fff;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
   overflow-y: auto;
   z-index: 999;
   padding: 0;
-  box-shadow: 1px 0px 11px 0px #ccc;
+  box-shadow: 1px 2px 8px 0px #bbb;
   bottom: 0;
-  padding-top: 52px; }
+  padding-top: 40px;
+  min-height: 350px; }
   .main-menu li {
     display: block;
     margin: 0;
@@ -53,43 +54,47 @@ a:visited, a:hover {
     margin-top: 4px;
     border-bottom: solid 1px #efeff4;
     line-height: 38px; }
+    .main-menu li .component-a-menu-link {
+      display: flex; }
     .main-menu li a {
       display: block; }
     .main-menu li .text {
-      display: block;
+      display: inline-block;
       font-size: 12px;
       font-family: "OpenSansSemiBold", sans-serif;
       color: #212121; }
-    .main-menu li .icon {
+    .main-menu li img {
+      display: inline-block;
+      margin: 0 18px; }
+    .main-menu li .main-menu-icon {
       margin: 0 12px;
       width: 32px;
       display: block;
       float: left;
       height: 32px;
-      background-image: url("../img/menusprite.png");
       background-repeat: no-repeat;
       background-position: center; }
 
-.main-menu li:nth-child(1) .icon {
-  background-position: center 8px; }
+.main-menu .icon-home {
+  background-image: url("../img/main-menu-home.png"); }
 
-.main-menu li:nth-child(2) .icon {
-  background-position: center -29px; }
+.main-menu .icon-auth {
+  background-image: url("../img/main-menu-enter.png"); }
 
-.main-menu li:nth-child(3) .icon {
-  background-position: center -67px; }
+.main-menu .icon-contacts {
+  background-image: url("../img/main-menu-phone.png"); }
 
-.main-menu li:nth-child(4) .icon {
-  background-position: center -104px; }
+.main-menu .icon-delivery {
+  background-image: url("../img/main-menu-money.png"); }
 
-.main-menu li:nth-child(5) .icon {
-  background-position: center -142px; }
+.main-menu .icon-guaranty {
+  background-image: url("../img/main-menu-sheild.png"); }
 
-.main-menu li:nth-child(6) .icon {
-  background-position: center -180px; }
+.main-menu .icon-services {
+  background-image: url("../img/main-menu-gear.png"); }
 
-.main-menu li:nth-child(7) .icon {
-  background-position: center -218px; }
+.main-menu .icon-articles {
+  background-image: url("../img/main-menu-list.png"); }
 
 /*==========MENU ACTIVE JS STYLES==============*/
 .fix {
@@ -100,7 +105,7 @@ a:visited, a:hover {
   margin-top: -16px;
   line-height: 52px;
   padding: 16px;
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   background: #fff;
   opacity: 1; }
@@ -2078,7 +2083,8 @@ i.close {
   background: #fff;
   box-shadow: 1px 1px 1px 1px #ccc, 0 0 1px 1px #ccc;
   padding-bottom: 16px;
-  display: none; }
+  display: none;
+  z-index: 1000; }
   .popup-filter .popup-filter-text {
     font: 15px "OpenSansSemiBold", sans-serif;
     color: #212121;
@@ -2426,6 +2432,10 @@ footer {
   display: none;
   background: url("../img/scroll-to-top.png"); }
 
+@media only screen and (min-width: 990px) {
+  .item-catalog-wrapper .item {
+    border: none; } }
+
 @media only screen and (min-width: 768px) {
   /* ====================
       WIDE: CSS3 Effects
@@ -2435,11 +2445,10 @@ footer {
     margin-top: -16px;
     line-height: 52px;
     padding: 16px;
-    position: fixed;
+    position: absolute;
     z-index: 9999;
     background: #fff;
-    opacity: 1;
-    left: 0px; }
+    opacity: 1; }
   .dropdown-search {
     width: 100%;
     margin: 0; }

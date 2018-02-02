@@ -138,6 +138,17 @@ var slikop = $('.feedback-popup').slick({
 });
 
 /*================ГАМБУРГЕР==========================*/
+function menu_close() {
+    $('.main-menu').slideUp(300);
+    $('.menu').css('display','block');
+    $('.fix').css('display','none');
+    $('.close-menu').css('display','none');
+    $('i.close').css('display','none');
+    $('.logo').removeClass('logo-fix');
+    $('.logo a').removeClass('image-fix');
+    $('.logo a').addClass('centred');
+    $('.profile').removeClass('profile-fix');
+}
 $(".burger").click(function(){
     $('.main-menu').slideDown(300);
     $('.menu').css('display','none');
@@ -149,15 +160,7 @@ $(".burger").click(function(){
     $('.profile').addClass('profile-fix');
 });
 $(".logo .close").click(function(){
-    $('.main-menu').slideUp(300);
-    $('.menu').css('display','block');
-    $('.fix').css('display','none');
-    $('.close-menu').css('display','none');
-    $('i.close').css('display','none');
-    $('.logo').removeClass('logo-fix');
-    $('.logo a').removeClass('image-fix');
-    $('.logo a').addClass('centred');
-    $('.profile').removeClass('profile-fix');
+    menu_close();
 });
 
 //Active button header
@@ -200,13 +203,13 @@ $('.delivery-close').click(function(){
 //catalog
 $('.show_catalog').click(function(){
     $(".catalog-section").css('display', 'block');
-    $('.burger').css('display', 'none');
     $('.catalog-pic').css('display', 'none');
     $('.header-icon').addClass('active');
+    $(".basked-section, .auth-section, .contacts, .delivery-section, .auth-section, .filter-section").css('display', 'none');
+    menu_close();
 });
 $('.catalog-section-close').click(function(){
     $(".catalog-section").css('display', 'none');
-    $('.burger').css('display', 'block');
     $('.display-pic').css('display', 'block');
     $('.header-icon').removeClass('active');
 });
@@ -216,28 +219,27 @@ $('.bucket-icon').click(function(){
     $(".filter-section").css('display', 'none');
 
     $(".basked-section").css('display', 'block');
-    $('.burger').css('display', 'none');
     $('.catalog-pic').css('display', 'none');
     $('.header-icon').addClass('active');
+    $(".filter-section, .contacts, .delivery-section, .filter-section, .catalog-section").css('display', 'none');
+    menu_close();
 });
 $('.basked-section-close').click(function(){
     $(".basked-section").css('display', 'none');
-    $('.burger').css('display', 'block');
     $('.display-pic').css('display', 'block');
     $('.header-icon').removeClass('active');
 });
 //filter
 $('.filter-btn').click(function(){
     $(".filter-section").css('display', 'block');
-    $('.burger').css('display', 'none');
     $('.catalog-pic').css('display', 'none');
-    $('.header-icon').addClass('active');
+    $('.header-icon').removeClass('active');
+    $(".basked-section, .contacts, .delivery-section, .auth-section, .catalog-section").css('display', 'none');
+    menu_close();
 });
 $('.filter-section-close').click(function(){
     $(".filter-section").css('display', 'none');
-    $('.burger').css('display', 'block');
     $('.display-pic').css('display', 'block');
-    $('.header-icon').removeClass('active');
 });
 $('.control-user button').click(function(){
     $('.control-user button').removeClass('active');
@@ -249,8 +251,9 @@ $('.profile a').click(function(){
     $('.header-icon').removeClass('active');
     $(".filter-section").css('display', 'none');
     $(".auth-section").css('display', 'block');
-    $('.burger').css('display', 'none');
     $('.catalog-pic').css('display', 'none');
+    $(".basked-section, .contacts, .delivery-section, .filter-section, .catalog-section").css('display', 'none');
+    menu_close();
 
 });
 $('.auth-section-close').click(function(){
