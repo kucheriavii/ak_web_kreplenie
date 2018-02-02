@@ -201,11 +201,11 @@ $('.delivery-close').click(function(){
     $('.display-pic').css('display', 'block');
 });
 //catalog
-$('.show_catalog').click(function(){
+$('.show_catalog').parents('.header-icon').click(function(){
     $(".catalog-section").css('display', 'block');
     $('.catalog-pic').css('display', 'none');
-    $('.header-icon').addClass('active');
-    $(".basked-section, .auth-section, .contacts, .delivery-section, .auth-section, .filter-section").css('display', 'none');
+    $(this).addClass('active');
+    $(".basked-section, .contacts, .delivery-section, .auth-section, .filter-section").css('display', 'none');
     menu_close();
 });
 $('.catalog-section-close').click(function(){
