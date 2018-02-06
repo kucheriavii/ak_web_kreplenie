@@ -1,0 +1,464 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile version</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <style>
+           body,html{height:100%;min-height:100%}.wrapper,body,html{min-height:100%}.wrapper a:focus,.wrapper a:hover,.wrapper a:visited,a:hover,a:visited{text-decoration:none;color:#212121}body{margin:0;padding:0;font-family:OpenSansRegular,sans-serif}.wrapper{min-width:320px}.wrapper button{outline:0}.header{margin-top:16px;margin-bottom:16px;height:24px}.main-menu{display:none;width:245px;background:#fff;position:fixed;top:0;overflow-y:auto;z-index:999;padding:52px 0 0;box-shadow:1px 0 11px 0 #ccc;bottom:0}.main-menu li .icon,i.close{background-repeat:no-repeat}.main-menu li{display:block;margin:4px 0 0;padding:0;height:38px;border-bottom:solid 1px #efeff4;line-height:38px}.main-menu li a{display:block}.main-menu li .text{display:block;font-size:12px;font-family:OpenSansSemiBold,sans-serif;color:#212121}.main-menu li .icon{margin:0 12px;width:32px;display:block;float:left;height:32px;background-image:url(img/menusprite.png);background-position:center}.close-menu,.fix,i.close{display:none}.main-menu li:nth-child(1) .icon{background-position:center 8px}.main-menu li:nth-child(2) .icon{background-position:center -29px}.main-menu li:nth-child(3) .icon{background-position:center -67px}.main-menu li:nth-child(4) .icon{background-position:center -104px}.main-menu li:nth-child(5) .icon{background-position:center -142px}.main-menu li:nth-child(6) .icon{background-position:center -180px}.main-menu li:nth-child(7) .icon{background-position:center -218px}.logo-fix{height:56px;margin-top:-16px;line-height:52px;padding:16px;position:fixed;z-index:9999;background:#fff;opacity:1}.close-menu{height:52px;margin:-16px 0 0;padding:0;position:fixed;width:245px}.auth-section .contacts-text p:last-child,.auth-section .phones,.basked-section .contacts-text p:last-child,.basked-section .phones,.catalog-section .contacts-text p:last-child,.catalog-section .phones,.contacts .contacts-text p:last-child,.contacts .phones,.delivery-section .contacts-text p:last-child,.delivery-section .phones,.filter-section .contacts-text p:last-child,.filter-section .phones{padding-bottom:10px}i.close{width:54px;height:56px;position:absolute;top:0;left:191px;background-color:#efeff4;background-image:url(img/close.png);background-position:center;opacity:1}.logo a,.menu .burger,.profile a{display:block;height:24px;background-position:50%;background-repeat:no-repeat}.image-fix{width:170px!important}.profile-fix{float:right}.menu .burger{background-image:url(img/burger.png)}.logo a{background-image:url(img/logo_clear.png);background-size:contain;width:164px}.logo img{display:block;max-height:24px}.logo .centred{width:auto;margin:0 auto;display:block}.profile a{background-image:url(img/profile.png)}.auth-section,.basked-section,.catalog-section,.contacts,.delivery-section,.filter-section{padding-left:15px;padding-right:15px;display:none;position:absolute;width:100%;top:0;right:50%;min-height:400px;background-color:transparent;z-index:9999;transform:translateX(50%);max-width:600px;overflow:auto}.auth-section h3,.basked-section h3,.catalog-section h3,.contacts h3,.delivery-section h3,.filter-section h3{font-family:OpenSansBold,sans-serif;display:block;height:56px;line-height:56px;font-size:16px;margin-top:0}.auth-section .show-map,.basked-section .show-map,.catalog-section .show-map,.contacts .show-map,.delivery-section .show-map,.filter-section .show-map{height:32px;font:12px/32px OpenSansRegular,sans-serif;color:#fff}.auth-section .phones a,.basked-section .phones a,.catalog-section .phones a,.contacts .phones a,.delivery-section .phones a,.filter-section .phones a{font:12px OpenSansRegular,sans-serif;text-decoration:underline;color:#5856d6}.auth-section .contacts-icon,.basked-section .contacts-icon,.catalog-section .contacts-icon,.contacts .contacts-icon,.delivery-section .contacts-icon,.filter-section .contacts-icon{display:block;float:left;position:relative;top:-3px;padding-right:10px}.auth-section .contacts-header,.basked-section .contacts-header,.catalog-section .contacts-header,.contacts .contacts-header,.delivery-section .contacts-header,.filter-section .contacts-header{display:block;font:14px OpenSansSemibold,sans-serif;margin-bottom:12px}.auth-section .contacts-text,.basked-section .contacts-text,.catalog-section .contacts-text,.contacts .contacts-text,.delivery-section .contacts-text,.filter-section .contacts-text{display:block;font:12px OpenSansRegular,sans-serif;text-shadow:#333 0 0 0;color:#212121;line-height:22px;margin-bottom:16px}.auth-section .phones ul,.basked-section .phones ul,.catalog-section .phones ul,.contacts .phones ul,.delivery-section .phones ul,.filter-section .phones ul{display:block;margin:0;padding:0}.auth-section .phones ul li,.basked-section .phones ul li,.catalog-section .phones ul li,.contacts .phones ul li,.delivery-section .phones ul li,.filter-section .phones ul li{list-style-type:none;margin:0;padding:0;line-height:28px}.auth-section .phones ul li .mail_contacts,.basked-section .phones ul li .mail_contacts,.catalog-section .phones ul li .mail_contacts,.contacts .phones ul li .mail_contacts,.delivery-section .phones ul li .mail_contacts,.filter-section .phones ul li .mail_contacts{color:#212121;height:100%;display:block;text-decoration:none}.auth-section .phones ul li .mail_contacts:before,.basked-section .phones ul li .mail_contacts:before,.catalog-section .phones ul li .mail_contacts:before,.contacts .phones ul li .mail_contacts:before,.delivery-section .phones ul li .mail_contacts:before,.filter-section .phones ul li .mail_contacts:before{content:"";display:block;float:left;width:20px;min-height:100%;background-image:url(img/mail.png);height:14px;background-position:0 50%;background-repeat:no-repeat}.auth-section .phones ul li a,.auth-section .phones ul li span,.basked-section .phones ul li a,.basked-section .phones ul li span,.catalog-section .phones ul li a,.catalog-section .phones ul li span,.contacts .phones ul li a,.contacts .phones ul li span,.delivery-section .phones ul li a,.delivery-section .phones ul li span,.filter-section .phones ul li a,.filter-section .phones ul li span{text-shadow:none}.delivery-section{display:none}.catalog-wrap,.item-wrap,.search_row{height:40px;background-color:#f44336}.catalog-wrap .search-item-container,.item-wrap .search-item-container,.search_row .search-item-container{background-color:#fff}.catalog-wrap a,.item-wrap a,.search_row a{display:block}.catalog-wrap .search-header,.item-wrap .search-header,.search_row .search-header{display:inline-block;font:14px OpenSansBold,sans-serif;color:#fff;line-height:40px;position:relative}.catalog-wrap .search-header .show_catalog,.item-wrap .search-header .show_catalog,.search_row .search-header .show_catalog{display:block;margin:0;padding:0;background-color:transparent;border:none}.catalog-wrap .search-header .dropdown-button,.item-wrap .search-header .dropdown-button,.search_row .search-header .dropdown-button{display:block;color:#445;position:absolute;z-index:999;left:100%;padding-left:5px;top:0}.catalog-wrap .search-header .dropdown-catalog,.item-wrap .search-header .dropdown-catalog,.search_row .search-header .dropdown-catalog{display:none;padding:0;margin:0;position:absolute;z-index:999}.catalog-wrap .search-header .dropdown-item,.item-wrap .search-header .dropdown-item,.search_row .search-header .dropdown-item{display:block;padding:0;margin:0}.catalog-wrap .search-input,.item-wrap .search-input,.search_row .search-input{background-image:url(img/search.png);background-position:8px center;background-repeat:no-repeat;text-indent:30px;font-family:OpenSansRegular,sans-serif;height:32px;margin-top:4px;width:100%;border-radius:3px;border:none;color:#333;outline:0;padding-right:10px}.catalog-wrap .search-input:after,.item-wrap .search-input:after,.search_row .search-input:after{content:"test";display:block;width:20px;background-color:red;height:40px}.catalog-wrap .search-input::placeholder,.item-wrap .search-input::placeholder,.search_row .search-input::placeholder{color:#c7c7cc;opacity:1}.catalog-wrap .header-icon,.item-wrap .header-icon,.search_row .header-icon{display:block}.catalog-wrap .bucket-icon,.catalog-wrap .heard-icon,.catalog-wrap .search-icon,.item-wrap .bucket-icon,.item-wrap .heard-icon,.item-wrap .search-icon,.search_row .bucket-icon,.search_row .heard-icon,.search_row .search-icon{display:block;background-image:url(img/heard.png);width:18px;height:40px;line-height:40px;background-repeat:no-repeat;background-position:center;position:relative;margin:0 auto}.catalog-wrap .active,.item-wrap .active,.search_row .active{background:#d32f2f}.catalog-wrap .shops,.item-wrap .shops,.search_row .shops{padding-left:0}.catalog-wrap .how-many,.item-wrap .how-many,.search_row .how-many{position:absolute;color:#fff;right:-9px;border-radius:50%;background:#64dd17;height:17px;min-width:17px;line-height:17px;text-align:center;top:0;left:52%;overflow:hidden;max-width:35px;display:inline-block;width:auto;font-size:12px}.catalog-wrap .bucket-icon,.item-wrap .bucket-icon,.search_row .bucket-icon{background-image:url(img/bucket.png);width:100%;padding:0;margin:0 auto}.catalog-wrap .search-icon,.item-wrap .search-icon,.search_row .search-icon{background-image:url(img/search-white.png);width:27px}.dropdown-search{background-color:#d32f2f;display:none}.active{display:block}.catalog-section .wrap{padding-bottom:30px}
+        </style>
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <!--Шапка сайта-->
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <span class="close-menu"></span>
+                        <ul class="main-menu">
+                            <li>
+                                <a href="#">
+                                    <span class="main-menu-icon icon-home"></span>
+                                    <span class="text">Главная</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="component-a-menu-link">
+                                    <span class="main-menu-icon icon-auth"></span>
+                                    <a href="#"><span class="text">Вход </span></a>| <a href="#"><span class="text">Регистрация</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="main-menu-icon icon-contacts"></span>
+                                    <span class="text">Контакты</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="main-menu-icon icon-delivery"></span>
+                                    <span class="text">Доставка и оплата</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="main-menu-icon icon-guaranty"></span>
+                                    <span class="text">Гарантия на товар</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="main-menu-icon icon-services"></span>
+                                    <span class="text">Услуги</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="main-menu-icon icon-articles"></span>
+                                    <span class="text">Статьи</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="menu header-icon col-xs-2">
+                            <a href="#" class="burger"></a>
+                        </span>
+                        <span class="logo col-xs-8">
+                            <a href="#" class="display-pic centred"></a>
+                            <i class="close"></i>
+                        </span>
+                        <span class="fix col-xs-2">
+                        </span>
+                        <span class="profile col-xs-2">
+                            <a href="#"></a>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <!--/Шапка сайта-->
+
+            <!--Корзина (фейд меню)-->
+            <section class="basked-section">
+                <div class="wrap">
+                    <div class="contact__header">
+                        <h3>Корзина</h3>
+                        <i class="basked-section-close"></i>
+                    </div>
+                    <div class="basked-info">
+                        <span>Товар добавлен в корзину:</span>
+                    </div>
+                    <ul class="basked-list clearfix">
+                        <li class="basked-item">
+                            <span class="basked-item-link">Logan Galaxy 4
+                                <button class="removePositionBskd">Удалить</button>
+                            </span>
+                            <div class="form-wrap">
+                                <form action="#">
+                                    <button style="display:none"></button>
+                                    <button class="removeItemBskd"></button>
+                                    <input type="text" class="basked-items-amount" name="bskd_it_cntr" value="1" title="">
+                                    <button class="addItemBskd"></button>
+                                </form>
+                            </div>
+                            <div class="product-price">
+                                <span class="product-actual-price">
+                                    <span class="product-nominal-price">288</span>
+                                    <span class="product-price-currency">грн</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="basked-item">
+                            <span class="basked-item-link">Logan Galaxy 4
+                                <button class="removePositionBskd">Удалить</button>
+                            </span>
+                            <div class="form-wrap">
+                                <form action="#">
+                                    <button style="display:none"></button>
+                                    <button class="removeItemBskd"></button>
+                                    <input type="text" class="basked-items-amount" name="bskd_it_cntr" value="1" title="">
+                                    <button class="addItemBskd"></button>
+                                </form>
+                            </div>
+                            <div class="product-price">
+                                <span class="product-actual-price">
+                                    <span class="product-nominal-price">288</span>
+                                    <span class="product-price-currency">грн</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="backed-total">
+                        <span class="items-amount-total">
+                            В корзине товаров: 12 шт.
+                        </span>
+                        <div class="items-price-total">
+                            <span>на сумму:</span>
+                            <span class="product-actual-price">
+                                <span class="product-nominal-price">288</span>
+                                <span class="product-price-currency">грн</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="backed-buttons">
+                        <button class="button-full total-btn-accept">Оформить заказ</button>
+                        <button class="button-full total-btn-continue">Продолжить покупки</button>
+                    </div>
+                </div>
+            </section>
+            <!--/Корзина-->
+
+            <section class="auth-section">
+                <div class="wrap">
+                    <div class="contact__header">
+                        <h3>Логин</h3>
+                        <i class="auth-section-close"></i>
+                    </div>
+
+                    <div class="social-auth">
+                        <span class="auth-info">Вход через соцсети</span>
+                        <div class="auth-buttons">
+                            <a href="#" class="auth-link google">
+                                <div class="img-box">
+                                    <img src="img/google-auth.png" alt="google">
+                                </div>
+                                <span class="text">Google</span>
+                            </a>
+                            <a href="#" class="auth-link fb">
+                                <div class="img-box">
+                                    <img src="img/facebook-auth.png" alt="facebook">
+                                </div>
+                                <span class="text">Facebook</span>
+                            </a>
+                        </div>
+                        <span class="info">или</span>
+                        <div class="auth-form">
+                            <form action="#">
+                                <label class="auth-email-lbl">
+                                    <input type="text" name="email" class="auth-email" placeholder="Email" required>
+                                </label>
+                                <label class="auth-pass-lbl">
+                                    <input type="password" name="password" class="auth-password" placeholder="Пароль" required>
+                                </label>
+
+                                <div class="password-block">
+                                    <label class="chk-pass-lb">
+                                        <input type="checkbox" name="show-pass" class="show-pass">
+
+                                        <span class="pass-show"><span class="show-pass-cheker"></span>Показать пароль</span>
+                                    </label>
+                                    <a href="#" class="rem-pass">Напомнить пароль</a>
+                                </div>
+
+                                <div class="backed-buttons clearfix">
+                                    <button class="button-full total-btn-accept enter">Войти</button>
+                                    <a href="#" class="button-full total-btn-continue registration">Регистрация</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--Контакты (фейд меню; присутствует только на index.html) -->
+            <section class="contacts">
+                <div class="wrap">
+
+                    <div class="contact__header">
+                        <h3>Контакты</h3>
+                        <i class="contacts-close"></i>
+                    </div>
+
+                    <div class="address">
+                        <span class="contacts-icon">
+                            <img src="img/place-contacts.png" alt="place">
+                        </span>
+                        <span class="contacts-header">Наш адрес:</span>
+                        <span class="contacts-text">
+                            г. Днипро,<br>
+                            Днепропетровская область, 49000
+                            ул. Авиационная, 39
+                        </span>
+                        <a href="#" class="button-full show-map">
+                            Показать на карте
+                        </a>
+                    </div>
+
+                    <div class="plan">
+                        <span class="contacts-icon">
+                            <img src="img/time-contacts.png" alt="place">
+                        </span>
+                        <span class="contacts-header">График выдачи товаров:</span>
+                        <span class="contacts-text">
+                            Пн – Пт: 9:00–12:00 и 16:00–18:00<br>
+                            Сб: 8:00–12:00<br>
+                            Воскресенье: выходной<br>
+                            Обязательно! Согласуйте время своего визита и наличие товара с нашим менеджером.<br>
+                        </span>
+                    </div>
+
+                    <div class="plan-call">
+                        <span class="contacts-icon">
+                            <img src="img/time-contacts.png" alt="place">
+                        </span>
+                        <span class="contacts-header">График работы call-центра:</span>
+                        <span class="contacts-text">
+                            Пн – Пт: 9:00–18:00<br>
+                            Сб: 8:00–12:00<br>
+                            Воскресенье: выходной<br>
+                            Заказы, оформленные через корзину, принимаются круглосуточно семь дней в неделю.<br>
+                        </span>
+                    </div>
+
+                    <div class="phones">
+                        <span class="contacts-icon">
+                            <img src="img/phone-contacts.png" alt="place">
+                        </span>
+                        <span class="contacts-header">Связь:</span>
+                        <ul class="contacts-text">
+                            <li class="phone-num">
+                                <a href="tel:+3806783-000-77" class="tel">+3(8067) 83-000-77 (Киевстар)</a>
+                            </li>
+                            <li class="phone-num">
+                                <a href="tel:+380545-881-42" class="tel">+3(8050) 45-881-42 (МТС)</a>
+                            </li>
+                            <li class="phone-num">
+                                <a href="tel:+3807345-881-42" class="tel">+3(8073) 45-881-42 (Лайф)</a>
+                            </li>
+                            <li class="phone-num">
+                                <span class="tel">+3807345-881-42 (Viber)</span>
+                            </li>
+                            <li class="phone-num">
+                                <a href="mailto:info@kreplenie-tv.com.ua" class="mail_contacts">info@kreplenie-tv.com.ua</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!--Доставка (фейд меню; присутствует только на index.html)-->
+            <section class="delivery-section">
+                <div class="wrap">
+
+                    <div class="contact__header">
+                        <h3>Доставка и оплата</h3>
+                        <i class="delivery-close"></i>
+                    </div>
+
+                    <div class="ukrainian-delivery">
+                        <span class="contacts-icon">
+                            <img src="img/money-delivery.png" alt="place">
+                        </span>
+                        <span class="contacts-header">Доставка и оплата по Украине:</span>
+                        <div class="contacts-text">
+                            <p>Бесплатная доставка по Украине для заказов от 500 грн!</p>
+
+                            <p>Уважаемые покупатели, если сумма вашего заказа составит 500 грн. и выше, и оплата товара будет осуществлена по предоплате, доставку товара на ваш склад "НовойПочты" или "Укрпочты" мы оплатим за вас.</p>
+
+                            <p>Также, мы оплатим доставку по Украине при отправке наложенным платежом (оплата товара при получении на вашем складе), но в таком случае, стоимость возврата денег на наш склад оплачиваете вы, что составит 20 грн. +2% от стоимости товара.</p>
+
+                            <p>Доставка по Украине заказов до 500 грн. Если сумма вашего заказа не превышает 500 грн. доставка осуществляется только транспортными компаниями "НоваяПочта" и “УкрПочта”.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="address-delivery">
+                        <span class="contacts-icon">
+                            <img src="img/address-delivery.png" alt="place">
+                        </span>
+                        <span class="contacts-header">Адресная доставка:</span>
+                        <span class="contacts-text">
+                            После оформления заказа, с вами свяжется наш менеджер и уточнит удобное для вас время доставки.<br>
+                            Стоимость доставки – от 50 грн.
+                        </span>
+                    </div>
+
+                    <div class="delivery-from-stock">
+                        <span class="contacts-icon">
+                            <img src="img/stock-delivery.png" alt="place">
+                        </span>
+                        <span class="contacts-header">Самовывоз со склада:</span>
+                        <span class="contacts-text">
+                        г. Днипро, ул. Авиационная д. 39. Обязательно согласуйте время своего визита и наличие товара с нашим менеджером.
+                        </span>
+                    </div>
+
+                    <div class="delivery-from-stock">
+                        <div class="contacts-text">
+                           <p>Предоплату товара вы можете произвести на карточку ПриватБанка
+                            №4731 2171 1083 4932
+                            получатель Оспанов А.Р.
+                               ФОП Оспанов А.Р. ЄДРПОУ: 2912700657 Види діяльності: 47.91 Роздрібна торгівля, що здійснюється фірмами поштового замовлення або через мережу Інтернет в Україні.</p>
+
+                           <p>Оплата товара производится только в национальной валюте Украины!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--/Доставка-->
+            <!--Второй ряд меню (отличаеться в index.html)-->
+            <div class="search_row">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="search col-xs-8">
+                            <form action="#">
+                                <span class="searchtool"></span>
+                                <input type="text" name="search-input" class="search-input" placeholder="Поиск товара">
+                            </form>
+                        </div>
+
+                        <a href="#" class="likes header-icon col-xs-2">
+                            <span class="heard-icon">
+                                <span class="how-many">3</span>
+                            </span>
+                        </a>
+
+                        <a href="#" class="likes header-icon col-xs-2">
+                            <div class="bucket-icon">
+                                <span class="how-many">10</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!--Секция основного контента-->
+            <section class="content-box">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="contact__header">
+                            <h3>Регистрация</h3>
+                            <i class="auth-section-close"></i>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="auth-form">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <label class="auth-name">
+                                                        <input type="text" name="user_name" class="auth-name" placeholder="Фамилия Имя Отчество" required="">
+                                                    </label>
+                                                    <label class="auth-email">
+                                                        <input type="text" name="email" class="auth-email" placeholder="Email" required="">
+                                                    </label>
+                                                    <label class="auth-phone">
+                                                        <input type="text" name="phone" class="auth-phone" placeholder="Телефон" required="">
+                                                    </label>
+                                                    <label class="auth-pass">
+                                                        <input type="password" name="password" class="auth-password" placeholder="Пароль" required="">
+                                                    </label>
+                                                    <label class="auth-pass">
+                                                        <input type="password" name="password" class="auth-password" placeholder="Пароль" required="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="password-block">
+                                                        <label class="chk-pass-lb">
+                                                            <input type="checkbox" name="show-pass" class="show-pass">
+
+                                                            <span class="pass-show"><span class="show-pass-cheker"></span>Показать пароль</span>
+                                                        </label>
+                                                        <a href="#" class="rem-pass">Напомнить пароль</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="backed-buttons clearfix">
+                                                <button class="button-full total-btn-accept enter">Войти</button>
+                                                <a href="#" class="button-full total-btn-continue registration">Регистрация</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="empty-footer"></div>
+        </div>
+        <!--Подвал-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" class="button-full">
+                            <i class="full-site-icon">
+                                <img src="img/fullversion.png" alt="full-version-icon">
+                            </i>
+                            Полная версия сайта
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/Подвал-->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("head").append("<link rel='stylesheet' type='text/css' href='css/normalize.min.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='css/fonts.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/bootstrap-3.3.7-dist/css/bootstrap.min.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/slick-1.8.0/slick/slick.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/slick-1.8.0/slick/slick-theme.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/magnigic-popup/magnific-popup.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='libs/UI/jquery-ui.min.css' />");
+                $("head").append("<link rel='stylesheet' type='text/css' href='css/main.css' />");
+            })
+        </script>
+        <script src="libs/slick-1.8.0/slick/slick.min.js"></script>
+        <script src="libs/magnigic-popup/jquery.magnific-popup.min.js"></script>
+        <script src="libs/UI/jquery-ui.min.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+</html>

@@ -726,7 +726,7 @@ i.close {
     }
     .ui-slider-horizontal .ui-slider-handle {
       top: -.6em;
-      margin-left: -.5em;
+      margin-left: -.79em;
     }
     .ui-slider-horizontal .ui-slider-range {
       top: 0;
@@ -2558,8 +2558,8 @@ i.close {
   background: #fff;
   box-shadow: 1px 1px 1px 1px #ccc, 0 0 1px 1px #ccc;
   padding-bottom: 16px;
-  display: none;
-  z-index: 1000;
+  display: block;
+  z-index: 9999;
   .popup-filter-text{
     font: 15px "OpenSansSemiBold", sans-serif;
     color: #212121;
@@ -2569,13 +2569,15 @@ i.close {
   .filter-button-wrapper{
     display: flex;
     justify-content: center;
-    button{
+    button, a{
       display: block;
       height: 50px;
       width: 140px;
       background-color: transparent;
       border: 1px solid #bdbdbd;
       font: 12px "OpenSansSemoBold", sans-serif;
+      text-align: center;
+      line-height: 50px;
     }
     .filter-cancel{
       border-right: none;
@@ -3035,6 +3037,10 @@ footer{
 }
 .content-box .item-container .item:last-child{
   border-right: none;
+}
+.password-block{
+  max-width: 600px;
+  margin: 8px auto;
 }
 }
 @media only screen and (max-height: 500px) {

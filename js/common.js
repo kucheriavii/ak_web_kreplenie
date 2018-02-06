@@ -298,6 +298,14 @@ $('.product-in-bucked .bucked-icon').click(function(){
     $('.product-in-bucked .bucked-icon').css('display', 'none');
     $('.product-in-bucked .buy').css('display', 'block');
 });
+
+//**document hide**/
+$(document).click(function (e) {
+    var container = $(".popup-filter");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
 /*******Скрыть/показать методы доставки********/
 $('.show-variants').click(function(e){
     var delVar = $(this).parents('.delivery-order').find('.variants-delivery');
