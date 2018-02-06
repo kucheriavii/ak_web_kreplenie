@@ -674,7 +674,7 @@ i.close {
   .wrap{
     padding-bottom: 30px;
   }
-  #slider-range{
+  .slider-range{
     margin: 0 15px;
   }
   .filter-price{
@@ -693,7 +693,7 @@ i.close {
     background: #CCCCCC;
     margin-bottom: 20px;
   }
-  #amount-left, #amount-right{
+  .amount-left, .amount-right{
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -741,6 +741,13 @@ i.close {
   }
   .filter-list{
     .filter-item{
+      .filter-link{
+        display: block;
+        line-height: 50px;
+        width: 100%;
+        position: relative;
+        z-index: 9999;
+      }
       .filter-subcategory-item{
         border: none;
         margin: 20px 0;

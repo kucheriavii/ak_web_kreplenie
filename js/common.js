@@ -2,19 +2,19 @@
 $( function() {
     var minimumRange = 0;
     var maximumRange = 1000;
-    var amountleft = $("#amount-left")
-    $( "#slider-range" ).slider({
+    var amountleft = $(".amount-left")
+    $( ".slider-range" ).slider({
         range: true,
         min: 0,
         max: 1000,
         values: [ minimumRange, maximumRange ],
         slide: function( event, ui ) {
             amountleft.val(ui.values[ 0 ]);
-            $( "#amount-right" ).val(ui.values[ 1 ]);
+            $( ".amount-right" ).val(ui.values[ 1 ]);
         }
     });
-    amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
-    $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
+    amountleft.val( $( ".slider-range" ).slider( "values", 0 ));
+    $( ".amount-right" ).val( $( ".slider-range" ).slider( "values", 1 ));
     $('body').append('<a href="#" id="go-top" title="Вверх"></a>');
 } );
 /***вешаем скролтутоп**/
@@ -62,67 +62,67 @@ $('.filter-subcategory-item .showall').parent('a').click(function(event){
 });
 /*============ХЕНДЛЕРЫ ДЛЯ ФИЛЬТРА======================*/
 //хендлер введения минимального значения для ползунка в фильтре каталога
-$("#amount-left").keyup(function(){
-    var minimumRange = parseInt($("#amount-left").val());
-    var maximumRange = parseInt($("#amount-right").val());
+$(".amount-left").keyup(function(){
+    var minimumRange = parseInt($(".amount-left").val());
+    var maximumRange = parseInt($(".amount-right").val());
     if($.isNumeric(minimumRange) && (maximumRange-minimumRange)>40 ){
-        $( "#slider-range" ).slider({
+        $( ".slider-range" ).slider({
             range: true,
             min: 0,
             max: 1000,
             values: [ minimumRange, maximumRange ],
             slide: function( event, ui ) {
                 amountleft.val(ui.values[ 0 ]);
-                $( "#amount-right" ).val(ui.values[ 1 ]);
+                $( ".amount-right" ).val(ui.values[ 1 ]);
             }
         });
-        amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
-        $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
+        $(".amount-left").val( $( ".slider-range" ).slider( "values", 0 ));
+        $( ".amount-right" ).val( $( ".slider-range" ).slider( "values", 1 ));
     } else {
-        $( "#slider-range" ).slider({
+        $( ".slider-range" ).slider({
             range: true,
             min: 0,
             max: 1000,
             values: [ 0, maximumRange ],
             slide: function( event, ui ) {
                 amountleft.val(ui.values[ 0 ]);
-                $( "#amount-right" ).val(ui.values[ 1 ]);
+                $( ".amount-right" ).val(ui.values[ 1 ]);
             }
         });
-        amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
-        $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
+        $(".amount-left").val( $( ".slider-range" ).slider( "values", 0 ));
+        $( ".amount-right" ).val( $( ".slider-range" ).slider( "values", 1 ));
     }
     });
 //хендлер введения максимального значения для ползунка в фильтре каталога
-$("#amount-right").keyup(function(){
-    var minimumRange = parseInt($("#amount-left").val());
-    var maximumRange = parseInt($("#amount-right").val());
+$(".amount-right").keyup(function(){
+    var minimumRange = parseInt($(".amount-left").val());
+    var maximumRange = parseInt($(".amount-right").val());
     if($.isNumeric(maximumRange) && (maximumRange-minimumRange)>0 ){
-        $( "#slider-range" ).slider({
+        $( ".slider-range" ).slider({
             range: true,
             min: 0,
             max: 1000,
             values: [ minimumRange, maximumRange ],
             slide: function( event, ui ) {
                 amountleft.val(ui.values[ 0 ]);
-                $( "#amount-right" ).val(ui.values[ 1 ]);
+                $( ".amount-right" ).val(ui.values[ 1 ]);
             }
         });
-        amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
-        $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
+        $(".amount-left").val( $( ".slider-range" ).slider( "values", 0 ));
+        $( ".amount-right" ).val( $( ".slider-range" ).slider( "values", 1 ));
     } else {
-        $( "#slider-range" ).slider({
+        $( ".slider-range" ).slider({
             range: true,
             min: 0,
             max: 1000,
             values: [ minimumRange, 1000 ],
             slide: function( event, ui ) {
                 amountleft.val(ui.values[ 0 ]);
-                $( "#amount-right" ).val(ui.values[ 1 ]);
+                $( ".amount-right" ).val(ui.values[ 1 ]);
             }
         });
-        amountleft.val( $( "#slider-range" ).slider( "values", 0 ));
-        $( "#amount-right" ).val( $( "#slider-range" ).slider( "values", 1 ));
+        $(".amount-left").val( $( ".slider-range" ).slider( "values", 0 ));
+        $( ".amount-right" ).val( $( ".slider-range" ).slider( "values", 1 ));
     }
 });
 /*============СЛАЙДЕРЫ======================*/

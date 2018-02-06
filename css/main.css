@@ -566,7 +566,7 @@ i.close {
 .filter-section .wrap {
   padding-bottom: 30px; }
 
-.filter-section #slider-range {
+.filter-section .slider-range {
   margin: 0 15px; }
 
 .filter-section .filter-price {
@@ -585,7 +585,7 @@ i.close {
   background: #CCCCCC;
   margin-bottom: 20px; }
 
-.filter-section #amount-left, .filter-section #amount-right {
+.filter-section .amount-left, .filter-section .amount-right {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -594,7 +594,7 @@ i.close {
   text-align: center;
   width: 33%;
   margin-bottom: 20px; }
-  .filter-section #amount-left:last-child, .filter-section #amount-right:last-child {
+  .filter-section .amount-left:last-child, .filter-section .amount-right:last-child {
     margin-right: 0;
     float: right; }
 
@@ -624,6 +624,13 @@ i.close {
     height: 4px;
     border: none;
     background-color: #eeeeee; }
+
+.filter-section .filter-list .filter-item .filter-link {
+  display: block;
+  line-height: 50px;
+  width: 100%;
+  position: relative;
+  z-index: 9999; }
 
 .filter-section .filter-list .filter-item .filter-subcategory-item {
   border: none;
