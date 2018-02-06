@@ -2751,6 +2751,8 @@ i.close {
       padding: 0;
       font: 10px "OpenSansSemiBold", sans-serif;
       color: #fff;
+      position: absolute;
+      z-index: 999;
       li{
         display: inline-block;
         margin-right: 2px;
