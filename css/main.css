@@ -2281,7 +2281,8 @@ i.close {
   .item:last-child {
     border-bottom: none; }
   .item .item-pic {
-    position: relative; }
+    position: relative;
+    min-height: 100px; }
     .item .item-pic .pic-code {
       position: absolute;
       bottom: 0;

@@ -2740,6 +2740,7 @@ i.close {
   }
   .item-pic{
     position: relative;
+    min-height: 100px;
     .pic-code{
       position: absolute;
       bottom: 0;
