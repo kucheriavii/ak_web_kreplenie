@@ -489,6 +489,7 @@ i.close {
         height: 12px;
         top: 18px;
         right: 14px;
+        display: none;
       }
       &:first-child{
         border-top: 1px solid #efeff4;
@@ -506,6 +507,9 @@ i.close {
           text-decoration: none;
         }
       }
+    }
+    .catalog-section .catalog-list .catalog-item:after{
+      display: none !important;
     }
     .opened{
       &:after{

@@ -49,8 +49,15 @@ $(function(){
 //скрваем в фильтре все елементы после 5го
 $(function(){
     var lines = $(".filter-subcategory");
-    console.log(lines.children("li").eq(4);
-})
+    for(var i = 0; i<lines.length;i++){
+        lines.eq(i).find('li').eq(4).nextAll('li.filter-subcategory-item').css('display', 'none');
+        lines.eq(i).find('li:last-child').css('display','block'); //show button 'show-all'
+    }
+});
+$('.filter-subcategory-item .showall').parent('a').click(function(event){
+    event.preventDefault();
+    console.log('console');
+});
 /*============ХЕНДЛЕРЫ ДЛЯ ФИЛЬТРА======================*/
 //хендлер введения минимального значения для ползунка в фильтре каталога
 $("#amount-left").keyup(function(){
@@ -414,7 +421,7 @@ $('.removePositionBskd').click(function (e) {
 });
 //==========================ГАРМОШКИ==============================//
 //subcatalog
-$('.catalog-section .catalog-item .catalog-link').click(function(e){
+/*$('.catalog-section .catalog-item .catalog-link').click(function(e){
     e.preventDefault();
     if($(this).parent().hasClass('opened')){
         $(this).parent().removeClass('opened');
@@ -423,7 +430,7 @@ $('.catalog-section .catalog-item .catalog-link').click(function(e){
         $(this).parent().addClass('opened');
         $(this).parent().find('.catalog-subcategory').slideDown(200);
     }
-});
+});*/
 //subfilter
 $('.filter-section .filter-item .filter-link').click(function(e){
     e.preventDefault();
