@@ -1082,6 +1082,51 @@ i.close {
   }
 }
 /*===========PRODUCTS===================*/
+.contact-us{
+  .contact-address, .contact-email, .contact-phones, contact-address{
+    margin-bottom: 25px;
+  }
+  margin-top: 40px;
+  #contacts__feedback{
+    min-height: 100%;
+    display: block;
+    min-width: 100%;
+  }
+  blockquote{
+    font: 12px "OpenSansRegular", sans-serif;
+    border-left: 1px solid #d32f2f;
+  }
+  label{
+    font: 12px "OpenSansRegular", sans-serif;
+    display: block;
+  }
+  input, textarea{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+  textarea{
+    width: 100%;
+    height: 146px;
+  }
+  .contact-us-button{
+    margin: 16px 0 50px;
+  }
+}
+/*===========PRODUCTS===================*/
 .product{
   &-header-section-name {
     background-color: #eeeeee;
@@ -1525,11 +1570,11 @@ i.close {
     }
   }
   .wrong{
-    font: 14px "OpenSansRegular", sans-serif;
-    border: 1px solid #f44336;
+    font: 14px "OpenSansRegular", sans-serif !important;
+    border: 1px solid #f44336 !important;
     &::placeholder{
-      font-size: 12px;
-      color: #f44336;
+      font-size: 12px !important;
+      color: #f44336 !important;
     }
   }
   .search{
@@ -2718,12 +2763,22 @@ i.close {
     .catalog-item-picture-link{
       min-height: 136px;
       min-width: 136px;
+      height: 200px;/*kostyle*/
+      position: relative;
     }
     img{
       display: block;
-      width: 100%;
+      /*width: 100%;*/
       min-width: 90px;
+      margin-left: auto;
+      margin-right: auto;
       /*min-height: 90px;*/
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      max-width: 150px;
+      max-height: 200px;
     }
   }
   display: block;
@@ -2809,7 +2864,11 @@ i.close {
   height: 88px;
 }
 .wrong{
-  color: #f44336;
+  color: #f44336 !important;
+  &::placeholder{
+    font-size: 12px !important;
+    color: #f44336 !important;
+  }
 }
 .orange{
   color: #f16522;

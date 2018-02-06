@@ -46,6 +46,11 @@ $(function(){
     var device_height=$(window).height();
     $("#map").css('height', device_height*0.9); //задаем блоку высоту в 90% от высоты дисплея. Для красивого отображения елемента
 });
+//скрваем в фильтре все елементы после 5го
+$(function(){
+    var lines = $(".filter-subcategory");
+    console.log(lines.children("li").eq(4);
+})
 /*============ХЕНДЛЕРЫ ДЛЯ ФИЛЬТРА======================*/
 //хендлер введения минимального значения для ползунка в фильтре каталога
 $("#amount-left").keyup(function(){
@@ -434,6 +439,9 @@ $('.catalog-section .catalog-item .ul').click(function (e) {
     e.stopPropagation()
 
 });
+$(".showall").parents('.filter-subcategory-item').click(function(){
+
+})
 //search
 $('.search-box').click(function(){
     if($('.dropdown-search').is(':visible')){
@@ -500,3 +508,6 @@ $('.popup-wraper .closer').click(function(){
     $('.popup-wraper').css('display','none');
 });
 
+$(window).on('load', function(){
+    $('.preloader').fadeOut();
+})
