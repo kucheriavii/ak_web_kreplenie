@@ -3004,6 +3004,7 @@ footer{
   cursor:pointer;
   display:none;
   background: url("../img/scroll-to-top.png");
+  z-index: 9999999;
 }
 @media only screen and (min-width: 990px) {
   .item-catalog-wrapper .item{
