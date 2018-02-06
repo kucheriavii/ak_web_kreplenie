@@ -57,6 +57,8 @@ $(function(){
 $('.filter-subcategory-item .showall').parent('a').click(function(event){
     event.preventDefault();
     console.log('console');
+    $(this).parents('.filter-subcategory').find('li').eq(4).nextAll('li.filter-subcategory-item').css('display', 'block');
+    $(this).parents('.filter-subcategory').find('li:last-child').css('display','none');
 });
 /*============ХЕНДЛЕРЫ ДЛЯ ФИЛЬТРА======================*/
 //хендлер введения минимального значения для ползунка в фильтре каталога
@@ -443,9 +445,9 @@ $('.filter-section .filter-item .filter-link').click(function(e){
     }
 });
 $('.catalog-section .catalog-item .ul').click(function (e) {
-    e.stopPropagation()
-
+    e.stopPropagation();
 });
+//гармошка в фильтре (5 елементов)
 $(".showall").parents('.filter-subcategory-item').click(function(){
 
 })
