@@ -2078,6 +2078,8 @@ i.close {
               display: block;
               margin: 0 auto;
               width: 100%;
+              width: auto;
+              max-height: 52px;
             }
           }
         }
@@ -2590,6 +2592,17 @@ i.close {
     }
   }
 
+}
+/***auth page***/
+.auth-box{
+  .auth-form .auth-password{
+    margin-bottom: 24px;
+  }
+  .auth-help{
+    font: 10px "OpenSansRegular", sans-serif;
+    margin-bottom: 5px;
+    display: block;
+  }
 }
 /**********order or consultation****/
 .product-help{

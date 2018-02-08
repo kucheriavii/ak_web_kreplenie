@@ -1,4 +1,5 @@
 //Инициализатор (вешает ползунки)
+var amountleft = $(".amount-left")
 $( function() {
     var minimumRange = 0;
     var maximumRange = 1000;

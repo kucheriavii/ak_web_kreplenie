@@ -1724,7 +1724,9 @@ i.close {
           .product-detail-info .product-detail-info-list .detail-info-section-feedback .info-section-feedback-pictures .feedback-photos .feedback-photo-link .feedback-img {
             display: block;
             margin: 0 auto;
-            width: 100%; }
+            width: 100%;
+            width: auto;
+            max-height: 52px; }
     .product-detail-info .product-detail-info-list .detail-info-section-feedback .feedback-replaid {
       display: block; }
       .product-detail-info .product-detail-info-list .detail-info-section-feedback .feedback-replaid .replaid {
@@ -2157,6 +2159,15 @@ i.close {
       border-radius: 0 3px 3px 0;
       background-color: #1e88e5;
       color: #fff; }
+
+/***auth page***/
+.auth-box .auth-form .auth-password {
+  margin-bottom: 24px; }
+
+.auth-box .auth-help {
+  font: 10px "OpenSansRegular", sans-serif;
+  margin-bottom: 5px;
+  display: block; }
 
 /**********order or consultation****/
 .product-help {

@@ -367,60 +367,50 @@
                 </div>
             </div>
             <!--Секция основного контента-->
-            <section class="content-box">
+            <section class="content-box auth-box">
                 <div class="container">
                     <div class="wrap">
                         <div class="contact__header">
                             <h3>Регистрация</h3>
-                            <i class="auth-section-close"></i>
+                            <p class="auth-info">
+                                После регистрации на сайте вам будет доступно отслеживание состояния заказов, личный кабинет и другие новые возможности.
+                            </p>
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="auth-form">
-                                        <form action="#">
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <label class="auth-name">
-                                                        <input type="text" name="user_name" class="auth-name" placeholder="Фамилия Имя Отчество" required="">
-                                                    </label>
-                                                    <label class="auth-email">
-                                                        <input type="text" name="email" class="auth-email" placeholder="Email" required="">
-                                                    </label>
-                                                    <label class="auth-phone">
-                                                        <input type="text" name="phone" class="auth-phone" placeholder="Телефон" required="">
-                                                    </label>
-                                                    <label class="auth-pass">
-                                                        <input type="password" name="password" class="auth-password" placeholder="Пароль" required="">
-                                                    </label>
-                                                    <label class="auth-pass">
-                                                        <input type="password" name="password" class="auth-password" placeholder="Пароль" required="">
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <div class="password-block">
-                                                        <label class="chk-pass-lb">
-                                                            <input type="checkbox" name="show-pass" class="show-pass">
+                            <div class="auth-form">
+                                <form action="#">
+                                    <label class="auth-email-lbl">
+                                        <span class="auth-help">
+                                            Ваше имя необходимо для того, чтобы мы знали с кем имеем дело))
+                                        </span>
+                                        <input type="text" name="user_name" class="auth-name" placeholder="Фамилия Имя Отчество" required="">
+                                    </label>
+                                    <label class="auth-email-lbl">
+                                        <span class="auth-help">
+                                            Является логином для входа на сайт. Также на него будут приходить уведомления о статусах заказа
+                                        </span>
+                                        <input type="text" name="email" class="auth-email" placeholder="Email" required="">
+                                    </label>
+                                    <label class="auth-phone-lbl">
+                                        <span class="auth-help">
+                                            Контактный телефон нужен для уточнения деталей заказа
+                                        </span>
+                                        <input type="text" name="email" class="auth-phone" placeholder="Контактный телефон" required="">
+                                    </label>
+                                    <label class="auth-pass-lbl">
+                                        <span class="auth-help">
+                                            Длина пароля не менее 6 символов
+                                        </span>
+                                        <input type="password" name="password" class="auth-password" placeholder="Пароль" required="">
+                                    </label>
 
-                                                            <span class="pass-show"><span class="show-pass-cheker"></span>Показать пароль</span>
-                                                        </label>
-                                                        <a href="#" class="rem-pass">Напомнить пароль</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="backed-buttons clearfix">
-                                                <button class="button-full total-btn-accept enter">Войти</button>
-                                                <a href="#" class="button-full total-btn-continue registration">Регистрация</a>
-                                            </div>
-                                        </form>
+                                    <div class="backed-buttons clearfix">
+                                        <button class="button-full total-btn-accept enter">Войти</button>
+                                        <a href="#" class="button-full total-btn-continue registration">Регистрация</a>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
