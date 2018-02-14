@@ -494,7 +494,8 @@ i.close {
     .basked-section .backed-buttons .button-full {
       margin-bottom: 16px;
       font-size: 14px;
-      font-family: "OpenSansSemiBold", sans-serif; }
+      font-family: "OpenSansSemiBold", sans-serif;
+      color: #fff; }
     .basked-section .backed-buttons .total-btn-continue {
       font-size: 12px;
       background-color: #fff;
@@ -525,7 +526,7 @@ i.close {
         font: 12px "OpenSansRegular", sans-serif;
         position: absolute; }
     .basked-list .basked-item .form-wrap {
-      display: inline-block;
+      display: inline-flex;
       margin-bottom: 30px; }
     .basked-list .basked-item form {
       display: flex; }

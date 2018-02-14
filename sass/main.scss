@@ -586,6 +586,7 @@ i.close {
       margin-bottom: 16px;
       font-size: 14px;
       font-family: "OpenSansSemiBold", sans-serif;
+      color:#fff;
     }
     .total-btn-continue{
       font-size: 12px;
@@ -621,7 +622,7 @@ i.close {
       }
     }
     .form-wrap{
-      display: inline-block;
+      display: inline-flex;
       margin-bottom: 30px;
     }
     form{

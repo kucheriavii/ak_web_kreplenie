@@ -381,20 +381,20 @@ var totalPositionPrice = $('.basked-item').find('.product-nominal-price').eq(0).
 //нажатие на добавить еденицу
 $(".addItemBskd").click(function (e) {
     e.preventDefault();
-   var howManyItemsInBasked=$(this).parents('form').find('.basked-items-amount').val();
+   var howManyItemsInBasked=$(this).parents('.form-wrap').find('.basked-items-amount').val();
    howManyItemsInBasked++;
-   $(this).parents('form').find('.basked-items-amount').val(howManyItemsInBasked);
-   $(this).parents('form').find('.basked-items-amount').val(howManyItemsInBasked);
+   $(this).parents('.form-wrap').find('.basked-items-amount').val(howManyItemsInBasked);
+   $(this).parents('.form-wrap').find('.basked-items-amount').val(howManyItemsInBasked);
    $(this).parents('.basked-item').find('.product-nominal-price').text(howManyItemsInBasked*totalPositionPrice);
 
 });
 //нажатие на отнять еденицу
 $(".removeItemBskd").click(function (e) {
     e.preventDefault();
-   var howManyItemsInBasked=$(this).parents('form').find('.basked-items-amount').val();
+   var howManyItemsInBasked=$(this).parents('.form-wrap').find('.basked-items-amount').val();
    if(howManyItemsInBasked>1){
        howManyItemsInBasked--;
-       $(this).parents('form').find('.basked-items-amount').val(howManyItemsInBasked);
+       $(this).parents('.form-wrap').find('.basked-items-amount').val(howManyItemsInBasked);
        $(this).parents('.basked-item').find('.product-nominal-price').text(howManyItemsInBasked*totalPositionPrice);
    }
 });
