@@ -92,12 +92,12 @@
             </header>
             <!--/Шапка сайта-->
             <!--Каталог (фейд меню) в index.html не используеться (предусмотрен с целбю дальнейшего внедрения)-->
-            <section class="catalog-section">
+            <section class="catalog-section header-popup">
                 <div class="wrap">
                     <!--Шапка с кнопкой для меню каталога-->
                     <div class="contact__header">
                         <h3>Каталог товаров</h3>
-                        <i class="catalog-section-close"></i>
+                        <i class="header-popup-close"></i>
                     </div>
                     <!--Список елементов каталога-->
                     <ul class="catalog-list">
@@ -114,10 +114,11 @@
                                     <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
                                 </li>
                                 <li class="catalog-subcategory-item">
-                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления</a>
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Т2 цифровое телевидение</a>
                             <ul class="catalog-subcategory">
@@ -135,6 +136,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Полки под телевизор</a>
                             <ul class="catalog-subcategory">
@@ -152,6 +154,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Крепления для проекторов</a>
                             <ul class="catalog-subcategory">
@@ -169,6 +172,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Экраны для проекторов</a>
                             <ul class="catalog-subcategory">
@@ -186,6 +190,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Крепления для колонок</a>
                             <ul class="catalog-subcategory">
@@ -203,6 +208,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Тумбы под телевизор</a>
                             <ul class="catalog-subcategory">
@@ -224,14 +230,13 @@
 
                 </div>
             </section>
-            <!--/Каталог-->
-
+            <!--/Каталог (фейд меню)-->
             <!--Корзина (фейд меню)-->
-            <section class="basked-section">
+            <section class="basked-section header-popup">
                 <div class="wrap">
                     <div class="contact__header">
                         <h3>Корзина</h3>
-                        <i class="basked-section-close"></i>
+                        <i class="header-popup-close"></i>
                     </div>
                     <div class="basked-info">
                         <span>Товар добавлен в корзину:</span>
@@ -242,12 +247,9 @@
                                 <button class="removePositionBskd">Удалить</button>
                             </span>
                             <div class="form-wrap">
-                                <form action="#">
-                                    <button style="display:none"></button>
-                                    <button class="removeItemBskd"></button>
-                                    <input type="text" name="bskd_it_cntr" class="basked-items-amount" value="1" title="">
-                                    <button class="addItemBskd"></button>
-                                </form>
+                                <button class="removeItemBskd"></button>
+                                <input type="text" class="basked-items-amount" name="bskd_it_cntr" value="1" title="">
+                                <button class="addItemBskd"></button>
                             </div>
                             <div class="product-price">
                                 <span class="product-actual-price">
@@ -261,12 +263,9 @@
                                 <button class="removePositionBskd">Удалить</button>
                             </span>
                             <div class="form-wrap">
-                                <form action="#">
-                                    <button style="display:none"></button>
-                                    <button class="removeItemBskd"></button>
-                                    <input type="text" name="bskd_it_cntr" class="basked-items-amount" value="1" title="">
-                                    <button class="addItemBskd"></button>
-                                </form>
+                                <button class="removeItemBskd"></button>
+                                <input type="text" class="basked-items-amount" name="bskd_it_cntr" value="1" title="">
+                                <button class="addItemBskd"></button>
                             </div>
                             <div class="product-price">
                                 <span class="product-actual-price">
@@ -289,18 +288,18 @@
                         </div>
                     </div>
                     <div class="backed-buttons">
-                        <button class="button-full total-btn-accept">Оформить заказ</button>
-                        <button class="button-full total-btn-continue">Продолжить покупки</button>
+                        <a href="#" class="button-full total-btn-accept">Оформить заказ</a>
+                        <a href="#" class="button-full total-btn-continue">Продолжить покупки</a>
                     </div>
                 </div>
             </section>
             <!--/Корзина-->
-            <!--auth section-->
-            <section class="auth-section">
+
+            <section class="auth-section header-popup">
                 <div class="wrap">
                     <div class="contact__header">
                         <h3>Логин</h3>
-                        <i class="auth-section-close"></i>
+                        <i class="header-popup-close"></i>
                     </div>
 
                     <div class="social-auth">
@@ -323,7 +322,7 @@
                         <div class="auth-form">
                             <form action="#">
                                 <label class="auth-email-lbl">
-                                    <input type="text" class="auth-email" name="email" placeholder="Email" required>
+                                    <input type="text" name="email" class="auth-email" placeholder="Email" required>
                                 </label>
                                 <label class="auth-pass-lbl">
                                     <input type="password" name="password" class="auth-password" placeholder="Пароль" required>
@@ -348,6 +347,7 @@
 
                 </div>
             </section>
+
 
             <div class="item-wrap">
                 <div class="container">

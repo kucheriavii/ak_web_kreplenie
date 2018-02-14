@@ -82,13 +82,14 @@
                     </div>
                 </div>
             </header>
-            <!--catalog section-->
-            <section class="catalog-section">
+            <section class="catalog-section header-popup">
                 <div class="wrap">
+                    <!--Шапка с кнопкой для меню каталога-->
                     <div class="contact__header">
                         <h3>Каталог товаров</h3>
-                        <i class="catalog-section-close"></i>
+                        <i class="header-popup-close"></i>
                     </div>
+                    <!--Список елементов каталога-->
                     <ul class="catalog-list">
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Крепления для телевизора</a>
@@ -103,10 +104,11 @@
                                     <a href="#" class="catalog-subcategory-link">42 дюйма и больше</a>
                                 </li>
                                 <li class="catalog-subcategory-item">
-                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления </a>
+                                    <a href="#" class="catalog-subcategory-link">Потолочные крепления</a>
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Т2 цифровое телевидение</a>
                             <ul class="catalog-subcategory">
@@ -124,6 +126,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Полки под телевизор</a>
                             <ul class="catalog-subcategory">
@@ -141,6 +144,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Крепления для проекторов</a>
                             <ul class="catalog-subcategory">
@@ -158,6 +162,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Экраны для проекторов</a>
                             <ul class="catalog-subcategory">
@@ -175,6 +180,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Крепления для колонок</a>
                             <ul class="catalog-subcategory">
@@ -192,6 +198,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Тумбы под телевизор</a>
                             <ul class="catalog-subcategory">
@@ -213,13 +220,13 @@
 
                 </div>
             </section>
-
-            <!--Basked section-->
-            <section class="basked-section">
+            <!--/Каталог (фейд меню)-->
+            <!--Корзина (фейд меню)-->
+            <section class="basked-section header-popup">
                 <div class="wrap">
                     <div class="contact__header">
                         <h3>Корзина</h3>
-                        <i class="basked-section-close"></i>
+                        <i class="header-popup-close"></i>
                     </div>
                     <div class="basked-info">
                         <span>Товар добавлен в корзину:</span>
@@ -230,12 +237,9 @@
                                 <button class="removePositionBskd">Удалить</button>
                             </span>
                             <div class="form-wrap">
-                                <form action="#">
-                                    <button style="display:none"></button>
-                                    <button class="removeItemBskd"></button>
-                                    <input type="text" class="basked-items-amount" name="bskd_it_cntr" value="1" title="">
-                                    <button class="addItemBskd"></button>
-                                </form>
+                                <button class="removeItemBskd"></button>
+                                <input type="text" class="basked-items-amount" name="bskd_it_cntr" value="1" title="">
+                                <button class="addItemBskd"></button>
                             </div>
                             <div class="product-price">
                                 <span class="product-actual-price">
@@ -249,12 +253,9 @@
                                 <button class="removePositionBskd">Удалить</button>
                             </span>
                             <div class="form-wrap">
-                                <form action="#">
-                                    <button style="display:none"></button>
-                                    <button class="removeItemBskd"></button>
-                                    <input type="text" class="basked-items-amount" name="bskd_it_cntr" value="1" title="">
-                                    <button class="addItemBskd"></button>
-                                </form>
+                                <button class="removeItemBskd"></button>
+                                <input type="text" class="basked-items-amount" name="bskd_it_cntr" value="1" title="">
+                                <button class="addItemBskd"></button>
                             </div>
                             <div class="product-price">
                                 <span class="product-actual-price">
@@ -277,18 +278,18 @@
                         </div>
                     </div>
                     <div class="backed-buttons">
-                        <button class="button-full total-btn-accept">Оформить заказ</button>
-                        <button class="button-full total-btn-continue">Продолжить покупки</button>
+                        <a href="#" class="button-full total-btn-accept">Оформить заказ</a>
+                        <a href="#" class="button-full total-btn-continue">Продолжить покупки</a>
                     </div>
                 </div>
             </section>
+            <!--/Корзина-->
 
-            <!--auth section-->
-            <section class="auth-section">
+            <section class="auth-section header-popup">
                 <div class="wrap">
                     <div class="contact__header">
                         <h3>Логин</h3>
-                        <i class="auth-section-close"></i>
+                        <i class="header-popup-close"></i>
                     </div>
 
                     <div class="social-auth">
@@ -311,10 +312,10 @@
                         <div class="auth-form">
                             <form action="#">
                                 <label class="auth-email-lbl">
-                                    <input type="text" class="auth-email" name="name" placeholder="Email" required>
+                                    <input type="text" name="email" class="auth-email" placeholder="Email" required>
                                 </label>
                                 <label class="auth-pass-lbl">
-                                    <input type="password" class="auth-password" name="name" placeholder="Пароль" required>
+                                    <input type="password" name="password" class="auth-password" placeholder="Пароль" required>
                                 </label>
 
                                 <div class="password-block">
@@ -338,11 +339,11 @@
             </section>
 
             <!--Filter section-->
-            <section class="filter-section">
+            <section class="filter-section header-popup">
                 <div class="wrap">
                     <div class="contact__header">
                         <h3>Фильтр</h3>
-                        <i class="filter-section-close"></i>
+                        <i class="header-popup-close"></i>
                     </div>
                     <div class="filter-price">
                         <h4>Цена</h4>
@@ -478,6 +479,138 @@
                     </form>
                 </div>
             </section>
+
+            <section class="filter-section header-popup">
+                <div class="wrap">
+                    <div class="contact__header">
+                        <h3>Фильтр</h3>
+                        <i class="header-popup-close"></i>
+                    </div>
+                    
+                    <form action="#">
+                        <ul class="filter-list">
+                            <li class="filter-item">
+                                <a href="#" class="filter-link">Наши предложения</a>
+                                <ul class="filter-subcategory">
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Бесплатная доставка (145)</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="filter-item">
+                                <a href="#" class="filter-link">Бренд</a>
+                                <ul class="filter-subcategory">
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Brateck (3)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>iTech (78)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>TechLink (66)</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="filter-item">
+                                <a href="#" class="filter-link">Тип</a>
+                                <ul class="filter-subcategory">
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Презентационная стойка (20)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Тумба без кронштейна (48)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Тумба с кронштейном (12)</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="filter-item">
+                                <a href="#" class="filter-link">Цвет</a>
+                                <ul class="filter-subcategory">
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Белый (20)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Коричневый (48)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Серебро (12)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Чёрный (56)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Чёрный, белый (4)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Чёрный, белый (4)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Чёрный, белый (4)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>Чёрный, белый (4)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <a href="#">
+                                            <span class="showall">Показать все</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="filter-item">
+                                <a href="#" class="filter-link">Максимальная диагональ
+                                    телевизора</a>
+                                <ul class="filter-subcategory">
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 37 дюймов (5)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 42 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 47 дюймов (24)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 50 дюймов (4)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 52 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 52 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 52 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 52 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 52 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 52 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 52 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <label class="check-list"><input type="checkbox" name="name"><span></span>До 52 дюймов (1)</label>
+                                    </li>
+                                    <li class="filter-subcategory-item">
+                                        <a href="#">
+                                            <span class="showall">Показать все</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+
             <div class="popup-filter">
                 <div class="popup-filter-text">
                     Найдено 10 товаров из 200

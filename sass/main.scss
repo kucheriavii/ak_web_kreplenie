@@ -194,7 +194,7 @@ i.close {
 }
 
 /*===========Contacts============*/
-.contacts, .delivery-section, .catalog-section, .basked-section, .filter-section, .auth-section{
+.header-popup{
   padding-left: 15px;
   padding-right: 15px;
   display: none;
@@ -223,7 +223,7 @@ i.close {
     height: 56px;
     position: relative;
   }
-  .contacts-close, .delivery-close, .catalog-section-close, .basked-section-close, .filter-section-close, .auth-section-close{
+  .contacts-close, .delivery-close, .catalog-section-close, .basked-section-close, .filter-section-close, .auth-section-close, .header-popup-close{
     width: 54px;
     height: 56px;
     position: absolute;
@@ -2961,7 +2961,7 @@ footer{
       }
     }
   }
-  .contacts, .delivery-section, .catalog-section, .basked-section, .filter-section, .auth-section{
+  .contacts, .delivery-section, .catalog-section, .basked-section, .filter-section, .auth-section, .header-popup{
     .wrap{
       width: 95%;
     }

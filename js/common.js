@@ -223,11 +223,6 @@ $('.show_catalog').parents('.header-icon').click(function(){
     $(".basked-section, .contacts, .delivery-section, .auth-section, .filter-section").css('display', 'none');
     menu_close();
 });
-$('.catalog-section-close').click(function(){
-    $(".catalog-section").css('display', 'none');
-    $('.display-pic').css('display', 'block');
-    $('.header-icon').removeClass('active');
-});
 //bucked
 $('.bucket-icon').click(function(){
     $(".auth-section").css('display', 'none');
@@ -238,11 +233,6 @@ $('.bucket-icon').click(function(){
     $('.header-icon').addClass('active');
     $(".filter-section, .contacts, .delivery-section, .filter-section, .catalog-section").css('display', 'none');
     menu_close();
-});
-$('.basked-section-close').click(function(){
-    $(".basked-section").css('display', 'none');
-    $('.display-pic').css('display', 'block');
-    $('.header-icon').removeClass('active');
 });
 //filter
 $('.filter-btn').click(function(){
@@ -270,11 +260,6 @@ $('.profile a').click(function(){
     $(".basked-section, .contacts, .delivery-section, .filter-section, .catalog-section").css('display', 'none');
     menu_close();
 
-});
-$('.auth-section-close').click(function(){
-    $(".auth-section").css('display', 'none');
-    $('.burger').css('display', 'block');
-    $('.display-pic').css('display', 'block');
 });
 /******Вибор юзера новый/зарегестрированый**********/
 $('.order-user button').click(function(e){
@@ -529,3 +514,14 @@ $('.popup-wraper .closer').click(function(){
 $(window).on('load', function(){
     $('.preloader').fadeOut();
 })
+
+
+
+//обновленные функции
+
+//закрыть попап
+$('.header-popup-close').click(function(){
+    $(this).parents('.header-popup').css('display','none');
+    $('.burger').css('display', 'block');
+    $('.display-pic').css('display', 'block');
+});
