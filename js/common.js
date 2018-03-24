@@ -531,10 +531,12 @@ $('.header-popup-close').click(function(){
     $('.burger').css('display', 'block');
     $('.display-pic').css('display', 'block');
     $('.dark_background').fadeOut();
+    $('.shops').removeClass('active');
 });
 
 
 $(document).on('click','.dark_background',(function (e) {
        $('.header-popup').fadeOut();
        $('.dark_background').fadeOut();
+       $('.shops').removeClass('active');
 }));

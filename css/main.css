@@ -2623,3 +2623,6 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
+.basked-section{
+  max-width: 435px;
+}
