@@ -198,6 +198,7 @@ $('.del-phone').click(function(){
     $(".contacts").css('display', 'block');
     $('.burger').css('display', 'none');
     $('.display-pic').css('display', 'none');
+    $('.dark_background').fadeIn(300);
 });
 $('.contacts-close').click(function(){
     $(".contacts").css('display', 'none');
@@ -209,6 +210,7 @@ $('.delivery-box').click(function(){
     $(".delivery-section").css('display', 'block');
     $('.burger').css('display', 'none');
     $('.display-pic').css('display', 'none');
+    $('.dark_background').fadeIn(300);
 })
 $('.delivery-close').click(function(){
     $(".delivery-section").css('display', 'none');
@@ -222,6 +224,7 @@ $('.show_catalog').parents('.header-icon').click(function(){
     $(this).addClass('active');
     $(".basked-section, .contacts, .delivery-section, .auth-section, .filter-section").css('display', 'none');
     menu_close();
+    $('.dark_background').fadeIn(300);
 });
 //bucked
 $('.bucket-icon').click(function(){
@@ -233,6 +236,7 @@ $('.bucket-icon').click(function(){
     $('.header-icon').addClass('active');
     $(".filter-section, .contacts, .delivery-section, .filter-section, .catalog-section").css('display', 'none');
     menu_close();
+    $('.dark_background').fadeIn(300);
 });
 //filter
 $('.filter-btn').click(function(){
@@ -241,6 +245,7 @@ $('.filter-btn').click(function(){
     $('.header-icon').removeClass('active');
     $(".basked-section, .contacts, .delivery-section, .auth-section, .catalog-section").css('display', 'none');
     menu_close();
+    $('.dark_background').fadeIn(300);
 });
 $('.filter-section-close').click(function(){
     $(".filter-section").css('display', 'none');
@@ -258,6 +263,7 @@ $('.profile a').click(function(){
     $(".auth-section").css('display', 'block');
     $('.catalog-pic').css('display', 'none');
     $(".basked-section, .contacts, .delivery-section, .filter-section, .catalog-section").css('display', 'none');
+    $('.dark_background').fadeIn(300);
     menu_close();
 
 });
@@ -288,8 +294,8 @@ $('.product-in-bucked .bucked-icon').click(function(){
 //**document hide**/
 $(document).click(function (e) {
     var container = $(".popup-filter");
-    if (container.has(e.target).length === 0){
-        container.hide();
+    if (e.target!=container[0]&&container.has(e.target).length === 0){
+       container.hide();
     }
 });
 /*******Скрыть/показать методы доставки********/
@@ -524,4 +530,11 @@ $('.header-popup-close').click(function(){
     $(this).parents('.header-popup').css('display','none');
     $('.burger').css('display', 'block');
     $('.display-pic').css('display', 'block');
+    $('.dark_background').fadeOut();
 });
+
+
+$(document).on('click','.dark_background',(function (e) {
+       $('.header-popup').fadeOut();
+       $('.dark_background').fadeOut();
+}));

@@ -2595,3 +2595,31 @@ footer {
         margin: 0 auto;
         width: 150px;
         height: 100%; } }
+
+.product-detail-info .product-detail-info-list .product-detail-info-section .detail-info-section-name + * {
+  cursor: auto; }
+
+.dark_background{
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(1,1,1,.5);
+  z-index: 0;
+}
+
+
+
+
+.basked-section {
+  padding-bottom: 30px;
+  position: fixed;
+  height: 90vh;
+}
+.basked-section .wrap{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
